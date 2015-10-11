@@ -24,7 +24,7 @@ xx、[](#)
 ------------------------------------------------------------------  
 
 
-## [CSS部分](http://docyue.github.io/per-FE-Interview/css部分的问题及答案.md)  
+## [CSS部分](https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md)  
 1、[介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？](#介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？)   
 2、[display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？](#display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？)  
 3、[用纯CSS创建一个三角形的原理是什么？](#用纯CSS创建一个三角形的原理是什么？)  
@@ -58,7 +58,7 @@ xx、[](#)
 
 ------------------------------------------------------------------   
 
-##[JavaScript部分](http://docyue.github.io/per-FE-Interview/javascript部分的问题及答案.md)
+##[JavaScript部分](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md)
 
 
 
