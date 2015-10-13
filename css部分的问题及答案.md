@@ -41,10 +41,19 @@ xx、[](#)
 
 	盒子有四个边界：外边距边界margin edge, 边框边界border edge, 内边距边界padding edge 与 内容边界content edge。
 
-	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部，它的大小为内容宽度 或 content-box宽及内容高度或content-box高。如果 box-sizing 为默认值， width, min-width, max-width, height, min-height 与 max-height 控制内容大小。
-	b.内边距区域padding area 用内容及可能的边框之间的空白区域扩展内容区域。它位于内边边界内部，通常有背景——颜色或图片（不透明图片盖住背景颜色）. 它的大小为 padding-box  宽与 padding-box 高。内边距与内容边界之间的空间可以由 padding-top, padding-right, padding-bottom, padding-left 和简写属性 padding 控制。
-	c.边框区域border area 是包含边框的区域，扩展了内边距区域。它位于边框边界内部，大小为 border-box  宽和 border-box 高。由 border-width 及简写属性 border控制。
-	d.外边距区域margin area用空白区域扩展边框区域，以分开相邻的元素。它的大小为  margin-box 的高宽。外边距区域大小由 margin-top, margin-right, margin-bottom, margin-left 及简写属性 margin 控制。在 外边距合并 的情况下，由于盒之间共享外边距，外边距不容易弄清楚。
+	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部，它的大小为内容宽度 或 content-box宽及内容高度或content-box高。
+	  如果 box-sizing 为默认值， width, min-width, max-width, height, min-height 与 max-height 控制内容大小。
+
+	b.内边距区域padding area 用内容及可能的边框之间的空白区域扩展内容区域。
+	  它位于内边边界内部，通常有背景——颜色或图片（不透明图片盖住背景颜色）. 它的大小为 padding-box  宽与 padding-box 高。
+	  内边距与内容边界之间的空间可以由 padding-top, padding-right, padding-bottom, padding-left 和简写属性 padding 控制。
+
+	c.边框区域border area 是包含边框的区域，扩展了内边距区域。它位于边框边界内部，大小为 border-box  宽和 border-box 高。
+	  由 border-width 及简写属性 border控制。
+	  
+	d.外边距区域margin area用空白区域扩展边框区域，以分开相邻的元素。
+	  它的大小为 margin-box,margin-top, margin-right, margin-bottom, margin-left 及简写属性 margin 控制。
+	  在外边距合并的情况下，由于盒之间共享外边距，外边距不容易弄清楚。
 
 	最后注意，对于行内非替换元素，其占用空间（行高）由 line-height 决定，即使有内边距与边框。
 </font>
@@ -54,18 +63,18 @@ xx、[](#)
 <font size=1>
 
  	1、display
-	  	block 象块类型元素一样显示。
-		none 缺省值。象行内元素类型一样显示。
-		inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。
-		list-item 象块类型元素一样显示，并添加样式列表标记。  
+	   block 象块类型元素一样显示。
+	   none 缺省值。象行内元素类型一样显示。
+	   inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。
+	   list-item 象块类型元素一样显示，并添加样式列表标记。  
 		
 	2、position	
-		absolute  生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。 
-		fixed （老IE不支持）  	        生成绝对定位的元素，相对于浏览器窗口进行定位。 
-		relative 生成相对定位的元素，相对于其正常位置进行定位。 
-		static  默认值。没有定位，元素出现在正常的流中  
-		inherit 规定从父元素继承 position 属性的值。  
-		*（忽略 top, bottom, left, right z-index 声明）
+	   absolute  生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。 
+	   fixed （老IE不支持）  	        生成绝对定位的元素，相对于浏览器窗口进行定位。 
+	   relative 生成相对定位的元素，相对于其正常位置进行定位。 
+	   static  默认值。没有定位，元素出现在正常的流中  
+	   inherit 规定从父元素继承 position 属性的值。  
+	   *（忽略 top, bottom, left, right z-index 声明）
 
 	absolute与fixed共同点与不同点
 		A、共同点：
