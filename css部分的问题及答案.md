@@ -15,9 +15,9 @@
 12、[如何水平居中一个元素？](#12)  
 13、[如何竖直居中一个元素?](#13)  
 14、[什么叫外边距折叠(collapsing margins)？](#14)  
-15、[在网页中的应该使用奇数还是偶数的字体？为什么呢？](#15)  
-16、[margin和padding分别适合什么场景使用？](#16)  
-17、[元素竖向的百分比设定是相对于容器的高度吗？](#17)  
+15、[css hack原理及常用hack?](#15)  
+16、[CSS选择器有哪些？](#16)  
+17、[CSS3有哪些新特性（包含哪些模块）？](#17)  
 18、[全屏滚动的原理是什么？用到了CSS的那些属性？](#18)  
 19、[什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？](#19)  
 20、[什么是伪元素，什么是伪类？,他们的区别是什么？](#20)  
@@ -27,7 +27,7 @@
 24、[`display:inline-block;`什么时候会显示间隙?](#24)  
 25、[`overflow:scroll;`时不能平滑滚动的问题怎么处理？](#25)  
 26、[怎么让Chrome支持小于12px;的文字？](#26)  
-27、[CSS3有哪些新特性（包含哪些模块）？](#27)  
+27、[](#27)  
 28、[请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？](#28)  
 29、[IE各个版本兼容性及hack](#29)   
 xx、[](#) 
@@ -138,7 +138,13 @@ xx、[](#)
 	    8.属性选择器（a[rel = "external"]）
 	    9.伪类选择器（a: hover, li: nth - child）
 
-	*   可继承的样式： font-size font-family color, UL LI DL DD DT;
+	*   可继承的样式：
+			1、关于文字排版的属性如：font,word-break,letter-spacing,text-align,text-rendering,
+					word-spacing,white-space,text-indent,text-transform,text-shadow
+			2、line-height
+			3、color
+			4、visibility
+			5、cursor
 
 	*   不可继承的样式：border padding margin width height ;
 
@@ -160,8 +166,17 @@ xx、[](#)
 **7、CSS中 link 和@import 的区别是？**  
 <font size=1>
 
-	@import只在IE5以上才能识别，link是HTML标签，无兼容问题;
-	link方式的样式的权重 高于@import的权重；
+	link方式的样式的权重,高于@import的权重；
+	link是HTML方式,@import是CSS方式；
+	link最大限度支持并行下载，@import过多嵌套导致串行下载,出现FOUC;
+	----------Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默认样式显示文档，
+		用户样式加载渲染之后再从新显示文档，造成页面闪烁。解决方法：把样式表放到文档的head-----------
+
+	link可以通过rel="alternate stylesheet"指定候选样式；
+	@import只在IE5以上才能识别，可以使用@import对老浏览器隐藏样式；
+	@import必须在样式规则之前，可以在css文件中引用其他文件；
+
+	总体来说：link优于@import
 </font>
 
 <a name='8'></a>
@@ -261,6 +276,7 @@ xx、[](#)
 <font size=1>
 
 	1、如果需要居中的元素为常规流中inline元素，为父元素设置text-align: center;即可实现;  
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 	2、如果需要居中的元素为常规流中block元素：  
 		1）为元素设置宽度  
@@ -285,6 +301,7 @@ xx、[](#)
 		        background: purple;
 		    }
 		</style>
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 	3、如果需要居中的元素为浮动元素：
 		1）为元素设置宽度
@@ -311,6 +328,7 @@ xx、[](#)
 		        background-color: purple;
 		    }
 		</style>
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 	4、如果需要居中的元素为绝对定位元素：
 		1）为元素设置宽度
@@ -365,6 +383,7 @@ xx、[](#)
 	3.在Windows Phone设备上不起作用
 	浏览器兼容性：
 	Chrome,Firefox, Safari, Mobile Safari, IE8-10.
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 
 	2、负外边距(Negative Margins)居中：如果块元素尺寸已知，最流行的方法：
@@ -386,6 +405,7 @@ xx、[](#)
 	1. 不能自适应。不支持百分比尺寸和min-/max-属性设置。
 	2. 内容可能溢出容器。
 	3. 边距大小与padding,和是否定义box-sizing: border-box有关，计算需要根据不同情况。
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 
 	3、变形（Transforms）：元素高度可变，最简单的方法：
@@ -408,6 +428,7 @@ xx、[](#)
 	2.属性需要写浏览器厂商前缀
 	3.可能干扰其他transform效果
 	4.某些情形下会出现文本或元素边界渲染模糊的现象
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 
 	4、表格单元格（Table-Cell）：最好的方法，因为内容块高度会随着实际内容的高度变化，浏览器对此的兼容性也好。
@@ -434,6 +455,7 @@ xx、[](#)
 	3.跨浏览器兼容性好。
 	缺点：
 	需要额外html标记
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 
 	5、行内块元素（Inline-Block）：受欢迎的方式，
@@ -474,6 +496,7 @@ xx、[](#)
 	1.需要一个容器
 	2.水平居中依赖于margin-left: -0.25em;该尺寸对于不同的字体/字号需要调整。
 	3.内容块宽度不能超过容器的100% - 0.25em。
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
 
 
 	6、Flexbox:	这是CSS布局未来的趋势。Flexbox是CSS3新增属性，设计初衷是为了解决像垂直居中这样的常见布局问题。
@@ -514,70 +537,176 @@ xx、[](#)
 </font>
 
 <a name='15'></a>
-**15、**  
+**15、css hack原理及常用hack?**  
 <font size=1>
+	
+	原理：利用不同浏览器对CSS的支持和解析结果不一样编写针对特定浏览器样式。常见的hack有:
+	1）属性hack
+	/* IE6 */
+	#once { _color: blue }
+
+	/* IE6, IE7 */
+	#doce { *color: blue; /* or #color: blue */ }
+
+	/* Everything but IE6 */
+	#diecisiete { color/**/: blue }
+
+	/* IE6, IE7, IE8 */
+	#diecinueve { color: blue\9; }
+
+	/* IE7, IE8 */
+	#veinte { color/*\**/: blue\9; }
+
+	/* IE6, IE7 -- acts as an !important */
+	#veintesiete { color: blue !ie; } /* string after ! can be anything */
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
+
+
+	2）选择器hack
+	/* IE6 and below */
+	* html #uno  { color: red }
+
+	/* IE7 */
+	*:first-child+html #dos { color: red }
+
+	/* IE7, FF, Saf, Opera  */
+	html>body #tres { color: red }
+
+	/* IE8, FF, Saf, Opera (Everything but IE 6,7) */
+	html>/**/body #cuatro { color: red }
+
+	/* Opera 9.27 and below, safari 2 */
+	html:first-child #cinco { color: red }
+
+	/* Safari 2-3 */
+	html[xmlns*=""] body:last-child #seis { color: red }
+
+	/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+	body:nth-of-type(1) #siete { color: red }
+
+	/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+	body:first-of-type #ocho {  color: red }
+
+	/* saf3+, chrome1+ */
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	 #diez  { color: red  }
+	}
+
+	/* iPhone / mobile webkit */
+	@media screen and (max-device-width: 480px) {
+	 #veintiseis { color: red  }
+	}
+
+	/* Safari 2 - 3.1 */
+	html[xmlns*=""]:root #trece  { color: red  }
+
+	/* Safari 2 - 3.1, Opera 9.25 */
+	*|html[xmlns*=""] #catorce { color: red  }
+
+	/* Everything but IE6-8 */
+	:root *> #quince { color: red  }
+
+	/* IE7 */
+	*+html #dieciocho {  color: red }
+
+	/* Firefox only. 1+ */
+	#veinticuatro,  x:-moz-any-link  { color: red }
+
+	/* Firefox 3.0+ */
+	#veinticinco,  x:-moz-any-link, x:default  { color: red  }
+	---------------------------------------------------------这是分割线-----------------------------------------------------------------
+
+
+	3）IE条件注释
+	<!--[if IE 6]>
+	Special instructions for IE 6 here
+	<![endif]-->
+
+
+
 
 </font>
 
 <a name='16'></a>
-**16、**  
+**16、CSS选择器有哪些？**  
 <font size=1>
+	
+	**通用选择器：选择所有元素，不参与计算优先级*，兼容性IE6+
+	#X id选择器：选择id值为X的元素，兼容性：IE6+
+	.X 类选择器： 选择class包含X的元素，兼容性：IE6+
+	X Y后代选择器： 选择满足X选择器的后代节点中满足Y选择器的元素，兼容性：IE6+
+	X 元素选择器： 选择标所有签为X的元素，兼容性：IE6+
+	:link，：visited，：focus，：hover，：active链接状态： 选择特定状态的链接元素，顺序LoVe HAte，兼容性: IE4+
 
+	X + Y直接兄弟选择器：在X之后第一个兄弟节点中选择满足Y选择器的元素，兼容性： IE7+
+	X > Y子选择器： 选择X的子元素中满足Y选择器的元素，兼容性： IE7+
+	X ~ Y兄弟： 选择X之后所有兄弟节点中满足Y选择器的元素，兼容性： IE7+
+	[attr]：选择所有设置了attr属性的元素，兼容性IE7+
+	[attr=value]：选择属性值刚好为value的元素
+	[attr~=value]：选择属性值为空白符分隔，其中一个的值刚好是value的元素
+	[attr|=value]：选择属性值刚好为value或者value-开头的元素
+	[attr^=value]：选择属性值以value开头的元素
+	[attr$=value]：选择属性值以value结尾的元素
+	[attr*=value]：选择属性值中包含value的元素
+	[:checked]：选择单选框，复选框，下拉框中选中状态下的元素，兼容性：IE9+
+	X:after, X::after：after伪元素，选择元素虚拟子元素（元素的最后一个子元素）
+
+	CSS3中::表示伪元素。兼容性:after为IE8+，::after为IE9+
+	:hover：鼠标移入状态的元素，兼容性a标签IE4+， 所有元素IE7+
+	:not(selector)：选择不符合selector的元素。不参与计算优先级，兼容性：IE9+
+	::first-letter：伪元素，选择块元素第一行的第一个字母，兼容性IE5.5+
+	::first-line：伪元素，选择块元素的第一行，兼容性IE5.5+
+	:nth-child(an + b)：伪类，选择前面有an + b - 1个兄弟节点的元素，其中n >= 0， 兼容性IE9+
+	:nth-last-child(an + b)：伪类，选择后面有an + b - 1个兄弟节点的元素 其中n >= 0，兼容性IE9+
+	X:nth-of-type(an+b)：伪类，X为选择器，解析得到元素标签，选择前面有an + b - 1个相同标签兄弟节点的元素。兼容性IE9+
+	X:nth-last-of-type(an+b)伪类，X为选择器，解析得到元素标签，选择后面有an+b-1个相同标签兄弟节点的元素。兼容性IE9+
+	X:first-child：伪类，选择满足X选择器的元素，且这个元素是其父节点的第一个子元素。兼容性IE7+
+	X:last-child：伪类，选择满足X选择器的元素，且这个元素是其父节点的最后一个子元素。兼容性IE9+
+	X:only-child：伪类，选择满足X选择器的元素，且这个元素是其父元素的唯一子元素。兼容性IE9+
+	X:only-of-type：伪类，选择X选择的元素，解析得到元素标签，如果该元素没有相同类型的兄弟节点时选中它。兼容性IE9+
+	X:first-of-type：伪类，选择X选择的元素，解析得到元素标签，如果该元素 是此此类型元素的第一个兄弟。选中它。兼容性IE9+
 </font>
 
 <a name='17'></a>
-**17、**  
+**17、CSS3有哪些新特性（包含哪些模块）？**  
+<font size=1>
+	
+	1、圆角border-radius、阴影box-shadow，text-shadow、渐变gradients、过渡transitions、动画animations、
+		布局multi-columns, flex box, grid layout, Opacity,color(rgb,rgba,hsl,hsla )
+	2、子串匹配的属性选择器:E[attribute^="value"]， E[attribute$="value"]， E[attribute*="value"]
+	3、新的伪类：
+		:target， :enabled 和 :disabled，:checked，:indeterminate，:root，:nth-child 和 :nth-last-child，
+		:nth-of-type和 :nth-last-of-type，:last-child，:first-of-type 和 :last-of-type，
+		:only-child 和 :only-of-type，:empty，和 :not
+	4、伪元素使用两个冒号而不是一个来表示：
+		:after 变为 ::after， :before 变为 ::before， :first-letter 变为 ::first-letter， 还有 :first-line 变为 ::first-line。
+</font>
+
+<a name='18'></a>
+**18、**  
 <font size=1>
 
 </font>
 
-<a name='1'></a>
-**2、**  
+<a name='19'></a>
+**19、**  
 <font size=1>
 
 </font>
 
-<a name='1'></a>
-**2、**  
+<a name='20'></a>
+**20、**  
 <font size=1>
 
 </font>
 
-<a name='1'></a>
-**2、**  
+<a name='21'></a>
+**21、**  
 <font size=1>
 
 </font>
 
-<a name='1'></a>
-**2、**  
-<font size=1>
 
-</font>
-
-<a name='1'></a>
-**2、**  
-<font size=1>
-
-</font>
-
-<a name='1'></a>
-**2、**  
-<font size=1>
-
-</font>
-
-<a name='1'></a>
-**2、**  
-<font size=1>
-
-</font>
-
-<a name='1'></a>
-**2、**  
-<font size=1>
-
-</font>
 
 
 
