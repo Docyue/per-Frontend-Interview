@@ -14,7 +14,7 @@
 
 	*其他：
 		HTTP、安全、正则、优化、重构、响应式、移动端、团队协作、可维护、SEO、UED、架构、职业生涯 
----------------------------------------------------------我是分割线-----------------------------------------------------------------
+---------------------------------------------------------分割线-----------------------------------------------------------------
 
 ## [html部分](https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md)  
 1、[Doctype作用？严格模式与混杂模式如何区分？它们有何意义?有多少种Doctype文档类型？](https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#1)  
@@ -37,7 +37,7 @@
 xx、[](#) 
 
   
----------------------------------------------------------我是分割线-----------------------------------------------------------------
+---------------------------------------------------------分割线-----------------------------------------------------------------
 
 ## [CSS部分](https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md)  
 1、[介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？](https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#1)   
@@ -60,13 +60,53 @@ xx、[](#)
 
 xx、[](#)  
 
----------------------------------------------------------我是分割线-----------------------------------------------------------------
+---------------------------------------------------------分割线-----------------------------------------------------------------
 ##[JavaScript部分](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md)
+1、[说说js的数据类型？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#1)   
+2、[null与undefined的不同点？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#2)  
+3、[说说js中的闭包和变量作用域？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#3)  
+4、[说说js中的事件流？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#4)    
+5、[说说JS的对象,类和对象的继承？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#5)    
+6、[说说http请求和ajax 以及ajax跨域？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#6)   
+7、[说说浏览器本地存储？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#7)  
+8、[web storage和cookie的区别？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#8)  
+9、[请你谈谈Cookie的弊端？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#9)  
+10、[DOM操作——怎样添加、移除、移动、复制、创建和查找节点？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#10)   
+11、[iframe的优缺点？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#11)   
+12、[你如何对网站的文件和资源进行优化？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#12)  
+13、[线程与进程的区别？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#13)  
+14、[你如何对网站的文件和资源进行优化？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#14)  
+15、[请说出三种减少页面加载时间的方法？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#15)  
+16、[new操作符具体干了什么呢？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#16)  
+17、[JSON 的了解？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#17)  
+18、[js延迟加载的方式有哪些？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#18)  
+19、[哪些操作会造成内存泄漏？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#19)  
+20、[对Node的优点和缺点提出了自己的看法？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#20)  
+21、[你有哪些性能优化的方法？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#21)  
+22、[一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#22)  
+23、[什么是"use strict"; 使用它的好处和坏处分别是什么？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#23)  
+24、[哪些地方会出现css阻塞,哪些地方会出现js阻塞？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#24)  
+25、[Javascript无阻塞加载具体方式？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#25)  
+26、[写一个通用的事件侦听器函数？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#26)  
+27、[JavaScript原型,原型链？有什么特点？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#27)  
+28、[详解JavaScript模块化开发：AMD和CMD 规范的区别？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#28)  
+29、[如何获取UA？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#29)  
+30、[如何给js数组去重？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#30)  
+31、[js中的缓存控制(cache-control)？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#31)  
+32、[js操作获取和设置cookie？](https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32)  
+33、[](#33)  
+34、[](#34)  
+35、[](#35)  
 
-
-
-
-
+---------------------------------------------------------分割线-----------------------------------------------------------------
+##参考资料部分  
+1、[jQuery 基本原理](http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html)  
+2、[JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)  
+3、[](#3)  
+<!-- 4、[](#4)  
+5、[](#5)  
+6、[](#6)  
+ -->
 
 
 
