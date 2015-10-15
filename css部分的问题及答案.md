@@ -30,19 +30,13 @@ xx、[](#)
 
 	盒子有四个边界：外边距边界margin edge, 边框边界border edge, 内边距边界padding edge 与 内容边界content edge。
 
-	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部，它的大小为内容宽度 或 content-box宽及内容高度或content-box高。
-	  如果 box-sizing 为默认值， width, min-width, max-width, height, min-height 与 max-height 控制内容大小。
+	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部，它的大小为内容宽度 或 content-box宽及内容高度或content-box高。 如果 box-sizing 为默认值， width, min-width, max-width, height, min-height 与 max-height 控制内容大小。
 
-	b.内边距区域padding area 用内容及可能的边框之间的空白区域扩展内容区域。
-	  它位于内边边界内部，通常有背景——颜色或图片（不透明图片盖住背景颜色）. 它的大小为 padding-box  宽与 padding-box 高。
-	  内边距与内容边界之间的空间可以由 padding-top, padding-right, padding-bottom, padding-left 和简写属性 padding 控制。
+	b.内边距区域padding area 用内容及可能的边框之间的空白区域扩展内容区域。它位于内边边界内部，通常有背景——颜色或图片（不透明图片盖住背景颜色）. 它的大小为 padding-box  宽与 padding-box 高。内边距与内容边界之间的空间可以由 padding-top, padding-right, padding-bottom, padding-left 和简写属性 padding 控制。
 
-	c.边框区域border area 是包含边框的区域，扩展了内边距区域。它位于边框边界内部，大小为 border-box  宽和 border-box 高。
-	  由 border-width 及简写属性 border控制。
+	c.边框区域border area 是包含边框的区域，扩展了内边距区域。它位于边框边界内部，大小为 border-box  宽和 border-box 高。 由 border-width 及简写属性 border控制。
 	  
-	d.外边距区域margin area用空白区域扩展边框区域，以分开相邻的元素。
-	  它的大小为 margin-box,margin-top, margin-right, margin-bottom, margin-left 及简写属性 margin 控制。
-	  在外边距合并的情况下，由于盒之间共享外边距，外边距不容易弄清楚。
+	d.外边距区域margin area用空白区域扩展边框区域，以分开相邻的元素。它的大小为 margin-box,margin-top, margin-right, margin-bottom, margin-left 及简写属性 margin 控制。在外边距合并的情况下，由于盒之间共享外边距，外边距不容易弄清楚。
 
 	最后注意，对于行内非替换元素，其占用空间（行高）由 line-height 决定，即使有内边距与边框。
 </font>
@@ -87,8 +81,7 @@ xx、[](#)
 **4、如何创建块级格式化上下文(block formatting context),BFC有什么用?**  
 <font size=1>
 
-	BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。
-	在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
+	BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。	在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
 
 	创建规则：
 	根元素
@@ -420,8 +413,7 @@ xx、[](#)
 	---------------------------------------------------------我是分割线-----------------------------------------------------------------
 
 
-	4、表格单元格（Table-Cell）：最好的方法，因为内容块高度会随着实际内容的高度变化，浏览器对此的兼容性也好。
-	最大的缺点是需要大量额外的标记，需要三层元素让最内层的元素居中。
+	4、表格单元格（Table-Cell）：最好的方法，因为内容块高度会随着实际内容的高度变化，浏览器对此的兼容性也好。	最大的缺点是需要大量额外的标记，需要三层元素让最内层的元素居中。
 	<div class="Center-Container is-Table">
 	  <div class="Table-Cell">
 	    <div class="Center-Block">
@@ -450,8 +442,7 @@ xx、[](#)
 	5、行内块元素（Inline-Block）：受欢迎的方式，
 	使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央；
 	
-	如果内容块宽度大于容器宽度，比如放了一个很长的文本，但内容块宽度设置最大不能超过容器的100%减去0.25em，	
-	否则使用伪元素:after内容块会被挤到容器顶部，使用:before内容块会向下偏移100%。
+	如果内容块宽度大于容器宽度，比如放了一个很长的文本，但内容块宽度设置最大不能超过容器的100%减去0.25em，	否则使用伪元素:after内容块会被挤到容器顶部，使用:before内容块会向下偏移100%。
 
 	如果你的内容块需要占据尽可能多的水平空间，可以使用max-width: 99%;（针对较大的容器）或max-width: calc(100% -0.25em)（取决于浏览器和容器宽度）
 	<div class="Center-Container is-Inline">
@@ -488,8 +479,7 @@ xx、[](#)
 	---------------------------------------------------------我是分割线-----------------------------------------------------------------
 
 
-	6、Flexbox:	这是CSS布局未来的趋势。Flexbox是CSS3新增属性，设计初衷是为了解决像垂直居中这样的常见布局问题。
-	记住Flexbox不只是用于居中，也可以分栏或者解决一些令人抓狂的布局问题。
+	6、Flexbox:	这是CSS布局未来的趋势。Flexbox是CSS3新增属性，设计初衷是为了解决像垂直居中这样的常见布局问题。	记住Flexbox不只是用于居中，也可以分栏或者解决一些令人抓狂的布局问题。
 	body {
 	   /* Remember to use the other versions for IE 10 and older browsers! */
 	   display: flex;
@@ -506,11 +496,9 @@ xx、[](#)
 	4.表现上可能会有一些问题
 
 	其他：
-	曾经你使用负边距（Negative Margins）的地方，现在可以用绝对居中(Absolute Centering)替代了。
-	你不再需要处理讨厌的边距计算和额外的标记，而且还能让内容块自适应大小居中;
+	曾经你使用负边距（Negative Margins）的地方，现在可以用绝对居中(Absolute Centering)替代了。	你不再需要处理讨厌的边距计算和额外的标记，而且还能让内容块自适应大小居中;
 
-	如果你的站点需要可变高度的内容，可以试试单元格(Table-Cell)和行内块元素(Inline-Block)这两种方法。
-	如果你处在流血的边缘，试试Flexbox，体验一下这一高级布局技术的好处吧。
+	如果你的站点需要可变高度的内容，可以试试单元格(Table-Cell)和行内块元素(Inline-Block)这两种方法。	如果你处在流血的边缘，试试Flexbox，体验一下这一高级布局技术的好处吧。
 </font>
 
 <a name='14'></a>
@@ -660,42 +648,13 @@ xx、[](#)
 **17、CSS3有哪些新特性（包含哪些模块）？**  
 <font size=1>
 	
-	1、圆角border-radius、阴影box-shadow，text-shadow、渐变gradients、过渡transitions、动画animations、
-		布局multi-columns, flex box, grid layout, Opacity,color(rgb,rgba,hsl,hsla )
+	1、圆角border-radius、阴影box-shadow，text-shadow、渐变gradients、过渡transitions、动画animations、		布局multi-columns, flex box, grid layout, Opacity,color(rgb,rgba,hsl,hsla )
 	2、子串匹配的属性选择器:E[attribute^="value"]， E[attribute$="value"]， E[attribute*="value"]
 	3、新的伪类：
-		:target， :enabled 和 :disabled，:checked，:indeterminate，:root，:nth-child 和 :nth-last-child，
-		:nth-of-type和 :nth-last-of-type，:last-child，:first-of-type 和 :last-of-type，
-		:only-child 和 :only-of-type，:empty，和 :not
+		:target， :enabled 和 :disabled，:checked，:indeterminate，:root，:nth-child 和 :nth-last-child，		:nth-of-type和 :nth-last-of-type，:last-child，:first-of-type 和 :last-of-type，		:only-child 和 :only-of-type，:empty，和 :not
 	4、伪元素使用两个冒号而不是一个来表示：
 		:after 变为 ::after， :before 变为 ::before， :first-letter 变为 ::first-letter， 还有 :first-line 变为 ::first-line。
 </font>
-
-<a name='18'></a>
-**18、**  
-<font size=1>
-
-</font>
-
-<a name='19'></a>
-**19、**  
-<font size=1>
-
-</font>
-
-<a name='20'></a>
-**20、**  
-<font size=1>
-
-</font>
-
-<a name='21'></a>
-**21、**  
-<font size=1>
-
-</font>
-
-
 
 
 
