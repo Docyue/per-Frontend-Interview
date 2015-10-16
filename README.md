@@ -166,10 +166,10 @@ js操作获取和设置cookie？</a>
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
-1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery 基本原理</a>  
-2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/">JavaScript 秘密花园</a>  
-3、<a href="http://www.appinn.com/markdown/#philosophy">Markdown语法</a>  
-4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">火狐开发者文档MDN</a>  
+1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html" target='_blank'>jQuery 基本原理</a>  
+2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
+3、<a href="http://www.appinn.com/markdown/#philosophy" target='_blank'>Markdown语法</a>  
+4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>  
 <!-- 4、<a href=""></a>  
 4、<a href=""></a>  
 4、<a href=""></a>  
