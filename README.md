@@ -169,8 +169,8 @@ js操作获取和设置cookie？</a>
 2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
 3、<a href="http://www.appinn.com/markdown/#philosophy" target='_blank'>Markdown语法</a>  
 4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>  
+5、<a href="https://github.com/paddingme/front-end-collect">整合资源项目</a>  
 <!-- 4、<a href=""></a>  
-4、<a href=""></a>  
 4、<a href=""></a>  
 4、<a href=""></a>  
 4、<a href=""></a>  
