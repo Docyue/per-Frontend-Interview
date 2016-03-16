@@ -34,7 +34,7 @@
 30、[如何给js数组去重？](#30)  
 31、[js中的缓存控制(cache-control)？](#31)  
 32、[js操作获取和设置cookie？](#32)  
-33、[](#33)  
+33、[说说什么是函数柯里化？](#33)  
 34、[](#34)  
 35、[](#35)  
 
@@ -1592,9 +1592,67 @@ xx、[](#)
 </font>
 
 <a name='33'></a>
-**33、**  
+**33、说说什么是函数柯里化？**  
 <font size=1>
+	// 柯里化的概念
+	闭包的我们之前已经接触到，先说说柯里化。柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。比如：
+	var adder = function(num){
+	    return function(y){
+	        return num + y;
+	    }
+	}
+	var inc = adder(1);
+	var dec = adder(-1);
 
+	这里的 inc/dec 两个变量事实上是两个新的函数，可以通过括号来调用，比如下例中的用法：
+	//inc, dec现在是两个新的函数，作用是将传入的参数值(+/-)1
+	print(inc(99));//100
+	print(dec(101));//100
+	print(adder(100)(2));//102
+	print(adder(2)(100));//102
+	-------------------------------------------------------------------------------------------------
+	// 柯里化的应用
+	根据柯里化的特性，我们可以写出更有意思的代码，比如在前端开发中经常会遇到这样的情况，当请求从服务端返回后，我们需要更新一些特定的页面元素，也就是局部刷新的概念。使用局部刷新非常简单，但是代码很容易写成一团乱麻。而如果使用柯里化，则可以很大程度上美化我们的代码，使之更容易维护。我们来看一个例子：
+	//update会返回一个函数，这个函数可以设置id属性为item的web元素的内容
+	function update(item){
+	    return function(text){
+	        $("div#"+item).html(text);
+	    }
+	}
+	//Ajax请求，当成功是调用参数callback
+	function refresh(url, callback){
+	    var params = {
+	        type : "echo",
+	        data : ""
+	    };
+	    $.ajax({
+	        type:"post",
+	        url:url,
+	        cache:false,
+	        async:true,
+	        dataType:"json",
+	        data:params,
+	        //当异步请求成功时调用
+	        success: function(data, status){
+	            callback(data);
+	        },
+	        //当请求出现错误时调用
+	        error: function(err){
+	            alert("error : "+err);
+	        }
+	    });
+	}
+	refresh("action.do?target=news", update("newsPanel"));
+	refresh("action.do?target=articles", update("articlePanel"));
+	refresh("action.do?target=pictures", update("picturePanel"));
+	-------------------------------------------------------------------------------------------------
+	// 柯里化总结
+	其中，update 函数即为柯里化的一个实例，它会返回一个函数，即：
+	    update("newsPanel") = function(text){
+	        $("div#newsPanel").html(text);
+	    }
+
+	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
 </font>
 
 <a name='34'></a>

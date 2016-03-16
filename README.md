@@ -160,8 +160,10 @@ JavaScript原型,原型链？有什么特点？</a>
 js中的缓存控制(cache-control)？</a>  
 32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32"  target='_blank'>
 js操作获取和设置cookie？</a>  
-33、[](#33)  
+33、32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/说说什么是函数柯里化？.md#33"  target='_blank'>
+说说什么是函数柯里化？</a> (#33) 
 34、[](#34)  
+35、[](#35)  
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
