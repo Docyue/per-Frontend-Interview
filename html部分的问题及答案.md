@@ -19,6 +19,11 @@
 15、[如何使用websocket？如何兼容低浏览器？](#15)  
 16、[HTML5的form如何关闭自动完成功能？](#16)   
 17、[什么叫优雅降级和渐进增强？](#17)   
+18、[了解 HTML5 中的 download 属性](#18)   
+19、[](#19)   
+20、[](#20)   
+21、[](#21)   
+
 
 xx、[](#)  
 
@@ -242,6 +247,18 @@ xx、[](#)
 
 	2，渐进增强：从被所有浏览器支持的基本功能开始，逐步地添加那些只有新式浏览器才支持的功能,向页面增加无害于基础浏览器的额外样式和功能的。
 	当浏览器支持时，它们会自动地呈现出来并发挥作用。
+</font>
+
+<a name='xx'></a>
+**18、了解HTML5中的downloa属性**  
+<font size=1>
+	<a href="http://www.zhangxinxu.com/wordpress/2016/04/know-about-html-download-attribute/">了解HTML5中的downloa属性</a>
+</font>
+
+<a name='xx'></a>
+**xx、**  
+<font size=1>
+
 </font>
 
 <a name='xx'></a>

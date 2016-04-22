@@ -50,7 +50,11 @@ iframe有哪些缺点？</a>
 16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#16"  target='_blank'>
 HTML5的form如何关闭自动完成功能？</a>   
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#17"  target='_blank'>
-什么叫优雅降级和渐进增强？</a>    
+什么叫优雅降级和渐进增强？</a> 
+18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>
+了解HTML5中的downloa属性</a>
+
+
 xx、[](#) 
 
   
@@ -160,8 +164,12 @@ JavaScript原型,原型链？有什么特点？</a>
 js中的缓存控制(cache-control)？</a>  
 32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32"  target='_blank'>
 js操作获取和设置cookie？</a>  
-33、32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/说说什么是函数柯里化？.md#33"  target='_blank'>
+33、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#33"  target='_blank'>
 说说什么是函数柯里化？</a> (#33) 
+34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+浏览器同源政策及其规避方法</a> (#33) 
+34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+跨域资源共享CORS详解</a> (#33) 
 34、[](#34)  
 35、[](#35)  
 
