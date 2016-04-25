@@ -167,11 +167,12 @@ js操作获取和设置cookie？</a>
 33、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#33"  target='_blank'>
 说说什么是函数柯里化？</a> (#33) 
 34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
-浏览器同源政策及其规避方法</a> (#33) 
-34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
-跨域资源共享CORS详解</a> (#33) 
-34、[](#34)  
-35、[](#35)  
+浏览器同源政策及其规避方法</a> (#34) 
+35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+跨域资源共享CORS详解</a> (#35)
+36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+JavaScript被忽视的细节</a> (#36)  
+37、[](#38)  
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  

@@ -37,7 +37,7 @@
 33、[说说什么是函数柯里化？](#33)  
 34、[浏览器同源政策及其规避方法](#34)  
 35、[跨域资源共享CORS详解](#35)  
-36、[](#36)  
+36、[JavaScript被忽视的细节](#36)  
 37、[](#37)  
 38、[](#38)  
 39、[](#39)  
@@ -1659,21 +1659,23 @@ xx、[](#)
 
 	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
 </font>
-
 <a name='34'></a>
 **34、浏览器同源政策及其规避方法**  
 <font size=1>
 <a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
 </font>
-
 <a name='35'></a>
-**35、跨域资源共享 CORS 详解**  
+**35、跨域资源共享CORS详解**  
 <font size=1>
 <a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
 </font>
+<a name='35'></a>
+**36、JavaScript被忽视的细节**  
+<font size=1>
+<a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a> 
+</font>
 
-
-<a name='xx'></a>
+<a name='36'></a>
 **xx、**  
 <font size=1>
 
