@@ -133,7 +133,7 @@ iframe的优缺点？</a>
 16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#16"  target='_blank'>
 new操作符具体干了什么呢？</a>  
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#17"  target='_blank'>
-JSON 的了解？</a>  
+JSON的了解？XML和JSON的区别？</a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#18"  target='_blank'>
 js延迟加载的方式有哪些？</a>  
 19、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#19"  target='_blank'>
