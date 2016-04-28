@@ -168,12 +168,15 @@ js操作获取和设置cookie？</a>
 说说什么是函数柯里化？</a> (#33) 
 34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
 浏览器同源政策及其规避方法</a> (#34) 
-35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#35"  target='_blank'>
 跨域资源共享CORS详解</a> (#35)
-36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#36"  target='_blank'>
 JavaScript被忽视的细节</a> (#36)  
-37、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
-谈谈你对webpack的看法</a>(#37)   
+37、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#37"  target='_blank'>
+谈谈你对webpack的看法</a>(#37)  
+38、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#38"  target='_blank'>
+TCP和UDP的区别</a>(#38)    
+
 37、[](#37)  
 37、[](#37)  
 37、[](#37)  
