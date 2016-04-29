@@ -364,7 +364,14 @@ xx、[](#)
 
 	1、绝对定位居中(Absolute Centering)：
 		需声明元素高度和下面的CSS:
+	.Center-Container {  
+	  position: relative;  
+	}  
+	  
 	.Absolute-Center {  
+	  width: 50%;  
+	  height: 50%;  
+	  overflow: auto;  
 	  margin: auto;  
 	  position: absolute;  
 	  top: 0; left: 0; bottom: 0; right: 0;  
