@@ -1217,13 +1217,14 @@ xx、[](#)
 <a name='17'></a>
 **17、JSON的了解？XML和JSON的区别？**  
 <font size=1>
-	了解：
+	*了解：
 	JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
 		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小；
 		{'age':'12', 'name':'back'}
 		JSON.parse('str') 				//转换string为JSON格式
 		JSON.stringfy('JSON') 			//转换JSON为string格式
-	区别：
+
+	*区别：
 	(1).数据体积方面。	
 		JSON相对于XML来讲，数据的体积小，传递的速度更快些。
 	(2).数据交互方面。
@@ -1414,8 +1415,8 @@ xx、[](#)
         },
         // 移除事件
         removeEvent : function(element, type, handler) {
-            if (element.removeEnentListener) {
-                element.removeEnentListener(type, handler, false);
+            if (element.removeEventListener) {
+                element.removeEventListener(type, handler, false);
             } else if (element.datachEvent) {
                 element.detachEvent('on' + type, handler);
             } else {
@@ -1431,11 +1432,11 @@ xx、[](#)
             }
         },
         // 取消事件的默认行为
-        preventDefault : function(event) {
-            if (event.preventDefault) {
-                event.preventDefault();
+        preventDefault : function(ev) {
+            if (ev.preventDefault) {
+                ev.preventDefault();
             } else {
-                event.returnValue = false;
+                ev.returnValue = false;
             }
         },
         // 获取事件目标
@@ -1611,6 +1612,7 @@ xx、[](#)
 <font size=1>
 	// 柯里化的概念
 	闭包的我们之前已经接触到，先说说柯里化。柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。比如：
+
 	var adder = function(num){
 	    return function(y){
 	        return num + y;
@@ -1725,6 +1727,13 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="https://imququ.com/post/http2-resource.html" target='_blank'>HTTP/2资料汇总</a> 
 </font>
 
+<a name='40'></a>
+**40、Javascript模块化编程**  
+<font size=1>
+	<a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target='_blank'>Javascript模块化编程（一）：模块的写法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target='_blank'>Javascript模块化编程（二）：AMD规范</a> 
+	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
+</font>
 
 
 <a name='XX'></a>

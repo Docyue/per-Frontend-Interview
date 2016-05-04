@@ -178,11 +178,11 @@ JavaScript被忽视的细节</a> (#36)
 TCP和UDP的区别</a>(#38)    
 39、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#39"  target='_blank'>
 HTTP/2资料汇总</a>(#39)  
+40、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#40"  target='_blank'>
+Javascript模块化编程</a>(#40)  
 
 
-37、[](#37)  
-37、[](#37)  
-37、[](#37)  
+
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
