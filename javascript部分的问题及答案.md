@@ -42,6 +42,7 @@
 38、[TCP和UDP的区别](#38)  
 39、[HTTP/2 资料汇总](#39)  
 40、[Javascript模块化编程](#40)  
+41、[chrome新版本地跨域](#41)  
 
 xx、[](#)  
 
@@ -691,13 +692,15 @@ xx、[](#)
 			所谓"深拷贝",就是能够实现真正意义上的数组和对象的拷贝。它的实现并不难,只要递归调用"浅拷贝"就行了。
 			　　function deepCopy(p, c) {
 			　　　　var c = c || {};
-			　　　　for (var i in p) {
-			　　　　　　if (typeof p[i] === 'object') {
-			　　　　　　　　c[i] = (p[i].constructor === Array) ？ [] : {};
-			　　　　　　　　deepCopy(p[i], c[i]);
-			　　　　　　} else {
-			　　　　　　　　　c[i] = p[i];
-			　　　　　　}
+					for (var i in p) {
+						if(p.hasOwnProperty(i)){ //不去继承p原型链上的属性
+						 	if (typeof p[i] === 'object') {
+				　　　　　　　　c[i] = (p[i].constructor === Array) ？ [] : {};
+				　　　　　　　　deepCopy(p[i], c[i]);
+				　　　　　　} else {
+				　　　　　　　　　c[i] = p[i];
+				　　　　　　}
+						}				　　　　　　
 			　　　　}
 			　　　　return c;
 			　　}
@@ -749,11 +752,11 @@ xx、[](#)
 			200-299 用于表示请求成功。 
 			300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。 
 			400-499 用于指出客户端的错误。
-				400    1、语义有误,当前请求无法被服务器理解。
-				401   当前请求需要用户验证 
+				400  语义有误,当前请求无法被服务器理解。
+				401  当前请求需要用户验证 
 				403  服务器已经理解请求,但是拒绝执行它。
 			500-599 用于支持服务器错误。 
-				503 – 服务不可用
+				503  服务不可用
 	---------------------------------------分割线---------------------------------------
 	2、AJAX
 		AJAX (异步 JavaScript 和 XML) 是个新产生的术语,专为描述JavaScript的两项强大性能.
@@ -795,7 +798,7 @@ xx、[](#)
 			------------------------------------------------------------------------------------------
 			C、在定义了如何处理响应后,就要发送请求了.可以调用HTTP请求类的open()和send()方法, 如下所示:
 				http_request.open('GET', 'http://www.example.org/some.file', true);
-				 http_request.send(null);
+				http_request.send(null);
 
 			1、open()的第一个参数是HTTP请求方式 – GET, POST, HEAD 或任何服务器所支持的您想调用的方式； 
 				按照HTTP规范,该参数要大写;否则,某些浏览器(如Firefox)可能无法处理请求；
@@ -1735,6 +1738,11 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
 </font>
 
+<a name='40'></a>
+**41、chrome新版本地跨域**  
+<font size=1>
+	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
+</font>
 
 <a name='XX'></a>
 **38、**  

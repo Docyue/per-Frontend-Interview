@@ -180,7 +180,8 @@ TCP和UDP的区别</a>(#38)
 HTTP/2资料汇总</a>(#39)  
 40、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#40"  target='_blank'>
 Javascript模块化编程</a>(#40)  
-
+41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
+chrome新版本地跨域</a>(#41)  
 
 
 
