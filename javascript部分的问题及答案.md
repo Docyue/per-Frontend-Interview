@@ -1738,14 +1738,15 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
 </font>
 
-<a name='40'></a>
+<a name='41'></a>
 **41、chrome新版本地跨域**  
 <font size=1>
 	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
 </font>
 
+
 <a name='XX'></a>
-**38、**  
+**XX、**  
 <font size=1>
 
 </font>
