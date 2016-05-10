@@ -43,6 +43,7 @@
 39、[HTTP/2 资料汇总](#39)  
 40、[Javascript模块化编程](#40)  
 41、[chrome新版本地跨域](#41)  
+42、[JavaScript函数式编程](#42)  
 
 xx、[](#)  
 
@@ -1744,6 +1745,11 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
 </font>
 
+<a name='42'></a>
+**42、JavaScript函数式编程**  
+<font size=1>
+	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
+</font>
 
 <a name='XX'></a>
 **XX、**  
