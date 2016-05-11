@@ -1749,6 +1749,7 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 **42、JavaScript函数式编程**  
 <font size=1>
 	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
+	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
 </font>
 
 <a name='XX'></a>
