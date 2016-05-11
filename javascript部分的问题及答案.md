@@ -1676,25 +1676,20 @@ xx、[](#)
 	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
 </font>
 <a name='34'></a>
-**34、浏览器同源政策及其规避方法**  
+**34、浏览器同源政策及其规避方法 和 跨域资源共享CORS详解**  
 <font size=1>
-<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
 </font>
 
 <a name='35'></a>
-**35、跨域资源共享CORS详解**  
-<font size=1>
-<a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
-</font>
-
-<a name='36'></a>
-**36、JavaScript被忽视的细节**  
+**35、JavaScript被忽视的细节**  
 <font size=1>
 <a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a> 
 </font>
 
-<a name='37'></a>
-**37、谈谈你对webpack的看法**  
+<a name='36'></a>
+**36、谈谈你对webpack的看法**  
 <font size=1>
 WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块依赖，并编绎输出模块们所需的静态文件。它能够很好地管理、打包Web开发中所用到的HTML、Javascript、CSS以及各种静态文件（图片、字体等），让开发过程更加高效。对于不同类型的资源，webpack有对应的模块加载器。webpack模块打包器会分析模块间的依赖关系，最后 生成了优化且合并后的静态资源。
 	
@@ -1717,40 +1712,48 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 
 </font>
 
-<a name='38'></a>
-**38、TCP和UDP的区别**  
+<a name='37'></a>
+**37、TCP和UDP的区别**  
 <font size=1>
 	TCP（Transmission Control Protocol，传输控制协议）是基于连接的协议，也就是说，在正式收发数据前，必须和对方建立可靠的连接。一个TCP连接必须要经过三次“对话”才能建立起来
 	-------------------------------------------------------------------------------------------------
 	UDP（User Data Protocol，用户数据报协议）是与TCP相对应的协议。它是面向非连接的协议，它不与对方建立连接，而是直接就把数据包发送过去！ UDP适用于一次只传送少量数据、对可靠性要求不高的应用环境。
 </font>
 
-<a name='39'></a>
-**39、HTTP/2资料汇总**  
+<a name='38'></a>
+**38、HTTP/2资料汇总**  
 <font size=1>
 	<a href="https://imququ.com/post/http2-resource.html" target='_blank'>HTTP/2资料汇总</a> 
 </font>
 
-<a name='40'></a>
-**40、Javascript模块化编程**  
+<a name='39'></a>
+**39、Javascript模块化编程**  
 <font size=1>
 	<a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target='_blank'>Javascript模块化编程（一）：模块的写法</a> 
 	<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target='_blank'>Javascript模块化编程（二）：AMD规范</a> 
 	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
 </font>
 
-<a name='41'></a>
-**41、chrome新版本地跨域**  
+<a name='40'></a>
+**40、chrome新版本地跨域**  
 <font size=1>
 	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
 </font>
 
-<a name='42'></a>
-**42、JavaScript函数式编程**  
+<a name='41'></a>
+**41、JavaScript函数式编程**  
 <font size=1>
 	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
 	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
 </font>
+
+<a name='42'></a>
+**42、JavaScript中的Promise **  
+<font size=1>
+	<a href="http://taobaofed.org/blog/2016/05/03/promise-anti-patterns/">Promise反模式</a>
+	<a href="https://www.h5jun.com/post/wait-promise.html">Promise 与定时器</a>	
+</font>
+
 
 <a name='XX'></a>
 **XX、**  
