@@ -165,25 +165,25 @@ js中的缓存控制(cache-control)？</a>
 32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32"  target='_blank'>
 js操作获取和设置cookie？</a>  
 33、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#33"  target='_blank'>
-说说什么是函数柯里化？</a> (#33) 
+说说什么是函数柯里化？</a>  
 34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
-浏览器同源政策及其规避方法</a> (#34) 
+浏览器同源政策及其规避方法</a>  
 35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#35"  target='_blank'>
-JavaScript被忽视的细节</a> (#35)  
+JavaScript被忽视的细节</a>   
 36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#36"  target='_blank'>
-谈谈你对webpack的看法</a>(#36)  
+谈谈你对webpack的看法</a>  
 37、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#37"  target='_blank'>
-TCP和UDP的区别</a>(#37)    
+TCP和UDP的区别</a>  
 38、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#38"  target='_blank'>
-HTTP/2资料汇总</a>(#38)  
+HTTP/2资料汇总</a>  
 39、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#39"  target='_blank'>
-Javascript模块化编程</a>(#39)  
+Javascript模块化编程</a>  
 40、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#40"  target='_blank'>
-chrome新版本地跨域</a>(#40)  
+chrome新版本地跨域</a>  
 41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
-JavaScript函数式编程</a>(#41)
+JavaScript函数式编程</a>  
 42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#42"  target='_blank'>
-JavaScript中的Promise</a>(#42)  
+JavaScript中的Promise</a>  
 
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------

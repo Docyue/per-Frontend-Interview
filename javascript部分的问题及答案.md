@@ -34,16 +34,16 @@
 30、[如何给js数组去重？](#30)  
 31、[js中的缓存控制(cache-control)？](#31)  
 32、[js操作获取和设置cookie？](#32)  
-33、[说说什么是函数柯里化？](#33)  
-34、[浏览器同源政策及其规避方法](#34)  
-35、[跨域资源共享CORS详解](#35)  
-36、[JavaScript被忽视的细节](#36)  
-37、[谈谈你对webpack的看法](#37)  
-38、[TCP和UDP的区别](#38)  
-39、[HTTP/2 资料汇总](#39)  
-40、[Javascript模块化编程](#40)  
-41、[chrome新版本地跨域](#41)  
-42、[JavaScript函数式编程](#42)  
+33、[说说什么是函数柯里化？](#33)
+34、[浏览器同源政策及其规避方法](#34)
+35、[JavaScript被忽视的细节](#35)
+36、[谈谈你对webpack的看法](#36)
+37、[TCP和UDP的区别](#37)
+38、[HTTP/2 资料汇总](#38)
+39、[Javascript模块化编程](#39)
+40、[chrome新版本地跨域](#40)
+41、[JavaScript函数式编程](#41)
+42、[JavaScript中的Promise](#42)
 
 xx、[](#)  
 
@@ -1746,6 +1746,7 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
 	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
 </font>
+
 
 <a name='42'></a>
 **42、JavaScript中的Promise **  
