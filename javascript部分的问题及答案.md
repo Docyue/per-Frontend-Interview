@@ -1747,6 +1747,7 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
 </font>
 
+
 <a name='42'></a>
 **42、JavaScript中的Promise**  
 <font size=1>
