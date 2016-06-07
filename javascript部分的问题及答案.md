@@ -18,7 +18,7 @@
 14、[你如何对网站的文件和资源进行优化？](#14)  
 15、[请说出三种减少页面加载时间的方法？](#15)  
 16、[new操作符具体干了什么呢？](#16)  
-17、[JSON 的了解？](#17)  
+17、[JSON的了解？XML和JSON的区别？](#17)  
 18、[js延迟加载的方式有哪些？](#18)  
 19、[哪些操作会造成内存泄漏？](#19)  
 20、[对Node的优点和缺点提出了自己的看法？](#20)  
@@ -34,9 +34,16 @@
 30、[如何给js数组去重？](#30)  
 31、[js中的缓存控制(cache-control)？](#31)  
 32、[js操作获取和设置cookie？](#32)  
-33、[](#33)  
-34、[](#34)  
-35、[](#35)  
+33、[说说什么是函数柯里化？](#33)
+34、[浏览器同源政策及其规避方法](#34)
+35、[JavaScript被忽视的细节](#35)
+36、[谈谈你对webpack的看法](#36)
+37、[TCP和UDP的区别](#37)
+38、[HTTP/2 资料汇总](#38)
+39、[Javascript模块化编程](#39)
+40、[chrome新版本地跨域](#40)
+41、[JavaScript函数式编程](#41)
+42、[JavaScript中的Promise](#42)
 
 xx、[](#)  
 
@@ -162,6 +169,7 @@ xx、[](#)
 		由于在Javascript语言中,只有函数内部的子函数才能读取局部变量,
 		因此可以把闭包简单理解成"定义在一个函数内部的函数"。
 		所以,在本质上,闭包就是将函数内部和函数外部连接起来的一座桥梁。
+
 	---------------------------------------分割线---------------------------------------
 	四、闭包的用途
 		闭包可以用在许多地方。它的最大用处有两个:
@@ -488,7 +496,8 @@ xx、[](#)
 			　　}
 			　　var cat1 = new Cat("大毛","黄色");
 			　　alert(cat1.species); // 动物
-		------------------------------------------------------------------------------------------		2、prototype模式
+		------------------------------------------------------------------------------------------		
+		2、prototype模式
 			第二种方法更常见,使用prototype属性,
 			如果"猫"的prototype对象,指向一个Animal的实例,那么所有"猫"的实例,就能继承Animal了。
 			　　Cat.prototype = new Animal();
@@ -684,13 +693,15 @@ xx、[](#)
 			所谓"深拷贝",就是能够实现真正意义上的数组和对象的拷贝。它的实现并不难,只要递归调用"浅拷贝"就行了。
 			　　function deepCopy(p, c) {
 			　　　　var c = c || {};
-			　　　　for (var i in p) {
-			　　　　　　if (typeof p[i] === 'object') {
-			　　　　　　　　c[i] = (p[i].constructor === Array) ？ [] : {};
-			　　　　　　　　deepCopy(p[i], c[i]);
-			　　　　　　} else {
-			　　　　　　　　　c[i] = p[i];
-			　　　　　　}
+					for (var i in p) {
+						if(p.hasOwnProperty(i)){ //不去继承p原型链上的属性
+						 	if (typeof p[i] === 'object') {
+				　　　　　　　　c[i] = (p[i].constructor === Array) ？ [] : {};
+				　　　　　　　　deepCopy(p[i], c[i]);
+				　　　　　　} else {
+				　　　　　　　　　c[i] = p[i];
+				　　　　　　}
+						}				　　　　　　
 			　　　　}
 			　　　　return c;
 			　　}
@@ -742,11 +753,11 @@ xx、[](#)
 			200-299 用于表示请求成功。 
 			300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。 
 			400-499 用于指出客户端的错误。
-				400    1、语义有误,当前请求无法被服务器理解。
-				401   当前请求需要用户验证 
+				400  语义有误,当前请求无法被服务器理解。
+				401  当前请求需要用户验证 
 				403  服务器已经理解请求,但是拒绝执行它。
 			500-599 用于支持服务器错误。 
-				503 – 服务不可用
+				503  服务不可用
 	---------------------------------------分割线---------------------------------------
 	2、AJAX
 		AJAX (异步 JavaScript 和 XML) 是个新产生的术语,专为描述JavaScript的两项强大性能.
@@ -788,7 +799,7 @@ xx、[](#)
 			------------------------------------------------------------------------------------------
 			C、在定义了如何处理响应后,就要发送请求了.可以调用HTTP请求类的open()和send()方法, 如下所示:
 				http_request.open('GET', 'http://www.example.org/some.file', true);
-				 http_request.send(null);
+				http_request.send(null);
 
 			1、open()的第一个参数是HTTP请求方式 – GET, POST, HEAD 或任何服务器所支持的您想调用的方式； 
 				按照HTTP规范,该参数要大写;否则,某些浏览器(如Firefox)可能无法处理请求；
@@ -1208,14 +1219,24 @@ xx、[](#)
 </font>
 
 <a name='17'></a>
-**17、JSON 的了解？**  
+**17、JSON的了解？XML和JSON的区别？**  
 <font size=1>
-	
+	*了解：
 	JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
 		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小；
 		{'age':'12', 'name':'back'}
 		JSON.parse('str') 				//转换string为JSON格式
 		JSON.stringfy('JSON') 			//转换JSON为string格式
+
+	*区别：
+	(1).数据体积方面。	
+		JSON相对于XML来讲，数据的体积小，传递的速度更快些。
+	(2).数据交互方面。
+		JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互。
+	(3).数据描述方面。
+		JSON对数据的描述性比XML较差。
+	(4).传输速度方面。
+		JSON的速度要远远快于XML。
 </font>
 
 <a name='18'></a>
@@ -1398,8 +1419,8 @@ xx、[](#)
         },
         // 移除事件
         removeEvent : function(element, type, handler) {
-            if (element.removeEnentListener) {
-                element.removeEnentListener(type, handler, false);
+            if (element.removeEventListener) {
+                element.removeEventListener(type, handler, false);
             } else if (element.datachEvent) {
                 element.detachEvent('on' + type, handler);
             } else {
@@ -1415,11 +1436,11 @@ xx、[](#)
             }
         },
         // 取消事件的默认行为
-        preventDefault : function(event) {
-            if (event.preventDefault) {
-                event.preventDefault();
+        preventDefault : function(ev) {
+            if (ev.preventDefault) {
+                ev.preventDefault();
             } else {
-                event.returnValue = false;
+                ev.returnValue = false;
             }
         },
         // 获取事件目标
@@ -1591,28 +1612,153 @@ xx、[](#)
 </font>
 
 <a name='33'></a>
-**33、**  
+**33、说说什么是函数柯里化？**  
 <font size=1>
+	// 柯里化的概念
+	闭包的我们之前已经接触到，先说说柯里化。柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。比如：
 
+	var adder = function(num){
+	    return function(y){
+	        return num + y;
+	    }
+	}
+	var inc = adder(1);
+	var dec = adder(-1);
+
+	这里的 inc/dec 两个变量事实上是两个新的函数，可以通过括号来调用，比如下例中的用法：
+	//inc, dec现在是两个新的函数，作用是将传入的参数值(+/-)1
+	print(inc(99));//100
+	print(dec(101));//100
+	print(adder(100)(2));//102
+	print(adder(2)(100));//102
+	-------------------------------------------------------------------------------------------------
+	// 柯里化的应用
+	根据柯里化的特性，我们可以写出更有意思的代码，比如在前端开发中经常会遇到这样的情况，当请求从服务端返回后，我们需要更新一些特定的页面元素，也就是局部刷新的概念。使用局部刷新非常简单，但是代码很容易写成一团乱麻。而如果使用柯里化，则可以很大程度上美化我们的代码，使之更容易维护。我们来看一个例子：
+	//update会返回一个函数，这个函数可以设置id属性为item的web元素的内容
+	function update(item){
+	    return function(text){
+	        $("div#"+item).html(text);
+	    }
+	}
+	//Ajax请求，当成功是调用参数callback
+	function refresh(url, callback){
+	    var params = {
+	        type : "echo",
+	        data : ""
+	    };
+	    $.ajax({
+	        type:"post",
+	        url:url,
+	        cache:false,
+	        async:true,
+	        dataType:"json",
+	        data:params,
+	        //当异步请求成功时调用
+	        success: function(data, status){
+	            callback(data);
+	        },
+	        //当请求出现错误时调用
+	        error: function(err){
+	            alert("error : "+err);
+	        }
+	    });
+	}
+	refresh("action.do?target=news", update("newsPanel"));
+	refresh("action.do?target=articles", update("articlePanel"));
+	refresh("action.do?target=pictures", update("picturePanel"));
+	-------------------------------------------------------------------------------------------------
+	// 柯里化总结
+	其中，update 函数即为柯里化的一个实例，它会返回一个函数，即：
+	    update("newsPanel") = function(text){
+	        $("div#newsPanel").html(text);
+	    }
+
+	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
 </font>
-
 <a name='34'></a>
-**34、**  
+**34、浏览器同源政策及其规避方法 和 跨域资源共享CORS详解**  
 <font size=1>
-
+	<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
 </font>
 
 <a name='35'></a>
-**35、**  
+**35、JavaScript被忽视的细节**  
 <font size=1>
+<a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a> 
+</font>
+
+<a name='36'></a>
+**36、谈谈你对webpack的看法**  
+<font size=1>
+WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块依赖，并编绎输出模块们所需的静态文件。它能够很好地管理、打包Web开发中所用到的HTML、Javascript、CSS以及各种静态文件（图片、字体等），让开发过程更加高效。对于不同类型的资源，webpack有对应的模块加载器。webpack模块打包器会分析模块间的依赖关系，最后 生成了优化且合并后的静态资源。
+	
+	webpack的两大特色：
+	1.code splitting（可以自动完成）
+	2.loader 可以处理各种类型的静态文件，并且支持串联操作
+	webpack 是以commonJS的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
+
+-------------------------------------------------------------------------------------------------
+
+	webpack具有requireJs和browserify的功能，但仍有很多自己的新特性：
+	1. 对 CommonJS 、 AMD 、ES6的语法做了兼容
+	2. 对js、css、图片等资源文件都支持打包
+	3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如提供对CoffeeScript、ES6的支持
+	4. 有独立的配置文件webpack.config.js
+	5. 可以将代码切割成不同的chunk，实现按需加载，降低了初始化时间
+	6. 支持 SourceUrls 和 SourceMaps，易于调试
+	7. 具有强大的Plugin接口，大多是内部插件，使用起来比较灵活
+	8.webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快
 
 </font>
 
+<a name='37'></a>
+**37、TCP和UDP的区别**  
+<font size=1>
+	TCP（Transmission Control Protocol，传输控制协议）是基于连接的协议，也就是说，在正式收发数据前，必须和对方建立可靠的连接。一个TCP连接必须要经过三次“对话”才能建立起来
+	-------------------------------------------------------------------------------------------------
+	UDP（User Data Protocol，用户数据报协议）是与TCP相对应的协议。它是面向非连接的协议，它不与对方建立连接，而是直接就把数据包发送过去！ UDP适用于一次只传送少量数据、对可靠性要求不高的应用环境。
+</font>
 
-<a name='xx'></a>
-**xx、**  
+<a name='38'></a>
+**38、HTTP/2资料汇总**  
+<font size=1>
+	<a href="https://imququ.com/post/http2-resource.html" target='_blank'>HTTP/2资料汇总</a> 
+</font>
+
+<a name='39'></a>
+**39、Javascript模块化编程**  
+<font size=1>
+	<a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target='_blank'>Javascript模块化编程（一）：模块的写法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target='_blank'>Javascript模块化编程（二）：AMD规范</a> 
+	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
+</font>
+
+<a name='40'></a>
+**40、chrome新版本地跨域**  
+<font size=1>
+	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
+</font>
+
+<a name='41'></a>
+**41、JavaScript函数式编程**  
+<font size=1>
+	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
+	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
+</font>
+
+
+<a name='42'></a>
+**42、JavaScript中的Promise**  
+<font size=1>
+	<a href="http://taobaofed.org/blog/2016/05/03/promise-anti-patterns/">Promise反模式</a>
+	<a href="https://www.h5jun.com/post/wait-promise.html">Promise 与定时器</a>	
+</font>
+
+
+<a name='XX'></a>
+**XX、**  
 <font size=1>
 
 </font>
-
 [回顶部](#回顶部)

@@ -50,7 +50,11 @@ iframe有哪些缺点？</a>
 16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#16"  target='_blank'>
 HTML5的form如何关闭自动完成功能？</a>   
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#17"  target='_blank'>
-什么叫优雅降级和渐进增强？</a>    
+什么叫优雅降级和渐进增强？</a> 
+18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>
+了解HTML5中的downloa属性</a>
+
+
 xx、[](#) 
 
   
@@ -129,7 +133,7 @@ iframe的优缺点？</a>
 16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#16"  target='_blank'>
 new操作符具体干了什么呢？</a>  
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#17"  target='_blank'>
-JSON 的了解？</a>  
+JSON的了解？XML和JSON的区别？</a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#18"  target='_blank'>
 js延迟加载的方式有哪些？</a>  
 19、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#19"  target='_blank'>
@@ -160,8 +164,27 @@ JavaScript原型,原型链？有什么特点？</a>
 js中的缓存控制(cache-control)？</a>  
 32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32"  target='_blank'>
 js操作获取和设置cookie？</a>  
-33、[](#33)  
-34、[](#34)  
+33、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#33"  target='_blank'>
+说说什么是函数柯里化？</a>  
+34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
+浏览器同源政策及其规避方法</a>  
+35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#35"  target='_blank'>
+JavaScript被忽视的细节</a>   
+36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#36"  target='_blank'>
+谈谈你对webpack的看法</a>  
+37、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#37"  target='_blank'>
+TCP和UDP的区别</a>  
+38、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#38"  target='_blank'>
+HTTP/2资料汇总</a>  
+39、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#39"  target='_blank'>
+Javascript模块化编程</a>  
+40、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#40"  target='_blank'>
+chrome新版本地跨域</a>  
+41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
+JavaScript函数式编程</a>  
+42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#42"  target='_blank'>
+JavaScript中的Promise</a>  
+
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
@@ -169,14 +192,9 @@ js操作获取和设置cookie？</a>
 2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
 3、<a href="http://www.appinn.com/markdown/#philosophy" target='_blank'>Markdown语法</a>  
 4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>  
-5、<a href="https://github.com/paddingme/front-end-collect">整合资源项目</a>  
-<!-- 4、<a href=""></a>  
-4、<a href=""></a>  
-4、<a href=""></a>  
-4、<a href=""></a>  
-4、<a href=""></a>  
-4、<a href=""></a>  
-4、<a href=""></a>   -->
+5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
+6、<a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" target='_blank'>深入理解JavaScript系列</a>  
+
 
 
 
