@@ -1737,7 +1737,10 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 <a name='40'></a>
 **40、chrome新版本地跨域**  
 <font size=1>
+	[WINDOWS]
 	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
+	[MAC]
+	终端中输入（open -a "Google Chrome" --args --disable-web-security --user-data-dir）
 </font>
 
 <a name='41'></a>
