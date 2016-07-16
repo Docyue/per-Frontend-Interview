@@ -183,7 +183,7 @@ chrome新版本地跨域</a>
 41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
 JavaScript函数式编程</a>  
 42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#42"  target='_blank'>
-JavaScript中的Promise</a>  
+JavaScript中的Promise </a>  
 
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
