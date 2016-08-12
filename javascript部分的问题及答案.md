@@ -1,6 +1,6 @@
 > <a name='回顶部'></a>  
 # JavaScript部分的问题及答案
-####更新时间：2015-10-15
+####更新时间：2016-8-12
 ### 问题  
 1、[说说js的数据类型？](#1)   
 2、[null与undefined的不同点？](#2)  
@@ -44,6 +44,8 @@
 40、[chrome新版本地跨域](#40)
 41、[JavaScript函数式编程](#41)
 42、[JavaScript中的Promise](#42)
+43、[JavaScript中跨域及header传参](#43)
+
 
 xx、[](#)  
 
@@ -1758,6 +1760,14 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	<a href="https://www.h5jun.com/post/wait-promise.html">Promise 与定时器</a>	
 </font>
 
+<a name='43'></a>
+**43、JavaScript中跨域及header传参**  
+<font size=1>
+	1.第一步 服务端设置响应头
+	a、跨域：header('Access-Control-Allow-Origin:*');  
+	b、支持的http方式：header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE');
+	c、header传参数：header('Access-Control-Allow-Headers:x-requested-with,content-type,authToken'); 自定义header参数为（authToken为自定义参数，更多参数继续添加）
+</font>
 
 <a name='XX'></a>
 **XX、**  
