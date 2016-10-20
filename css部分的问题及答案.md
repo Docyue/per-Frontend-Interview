@@ -19,6 +19,7 @@
 15、[css hack原理及常用hack?](#15)  
 16、[CSS选择器有哪些？](#16)  
 17、[CSS3有哪些新特性（包含哪些模块）？](#17)  
+18、[iphone手机不同版本CSS兼容怎么实现？](#18)  
 
 
 xx、[](#)  
@@ -691,6 +692,15 @@ xx、[](#)
 		:after 变为 ::after, :before 变为 ::before, :first-letter 变为 ::first-letter, 
 		还有 :first-line 变为 ::first-line。
 </font>
+
+<a name='17'></a>
+**18、iphone手机不同版本CSS兼容怎么实现？**  
+<font size=1>
+	具体答案：
+	http://stackoverflow.com/questions/12539697/iphone-5-css-media-query
+</font>
+
+
 
 <a name='xx'></a>
 **xx、**  
