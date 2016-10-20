@@ -96,7 +96,7 @@ CSS选择器有哪些？</a>
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#17"  target='_blank'>
 CSS3有哪些新特性（包含哪些模块）？</a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#18"  target='_blank'>
-iphone手机不同版本CSS兼容？</a>  
+iphone手机不同版本CSS兼容怎么实现？</a>  
 
 xx、[](#)  
 
