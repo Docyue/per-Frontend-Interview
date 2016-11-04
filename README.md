@@ -185,7 +185,7 @@ chrome新版本地跨域</a>
 41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
 JavaScript函数式编程</a>  
 42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#42"  target='_blank'>
-42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#43"  target='_blank'>
+43、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#43"  target='_blank'>
 JavaScript中跨域及header传参 </a>  
 
 
