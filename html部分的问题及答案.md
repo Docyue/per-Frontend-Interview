@@ -260,9 +260,9 @@ XHTML 1.0 规定了三种 XML 文档类型：Strict、Transitional 以及 Frames
 </font>
 
 <a name='xx'></a>
-**18、了解HTML5中的downloa属性**  
+**18、了解HTML5中的download属性**  
 <font size=1>
-	<a href="http://www.zhangxinxu.com/wordpress/2016/04/know-about-html-download-attribute/">了解HTML5中的downloa属性</a>
+	<a href="http://www.zhangxinxu.com/wordpress/2016/04/know-about-html-download-attribute/">了解HTML5中的download属性</a>
 </font>
 
 <a name='xx'></a>
