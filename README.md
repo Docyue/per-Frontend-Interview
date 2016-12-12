@@ -188,7 +188,6 @@ JavaScript函数式编程</a>
 43、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#43"  target='_blank'>
 JavaScript中跨域及header传参 </a>  
 
-
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
 1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html" target='_blank'>jQuery 基本原理</a>  
