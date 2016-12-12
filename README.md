@@ -36,7 +36,7 @@ HTML全局属性(global attribute)有哪些?</a>
 9、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#9"  target='_blank'>
 html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？</a>  
 10、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#10"  target='_blank'>
-HTML5的离线储存怎么用，工作原理能不能解释一下？</a>  
+HTML5的离线储存怎么用，工作原理能不能解释一下？什么是应用程序缓存（Application Cache）？</a>  
 11、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#11"  target='_blank'>
 浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</a>  
 12、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#12"  target='_blank'>
