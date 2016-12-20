@@ -37,8 +37,7 @@ xx、[](#)
 
 	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部,
 		它的大小为内容宽度 或 content-box宽及内容高度或content-box高。 
-		如果 box-sizing 为默认值, 
-		width, min-width, max-width, height, min-height 与 max-height 控制内容大小。
+		如果 box-sizing 为默认(content-box)值,由height,width 控制内容大小。如果为border-box,则width,height是包含border的；width为100px，border为1px,content的大小是98px;
 
 	b.内边距区域padding area 用内容及可能的边框之间的空白区域扩展内容区域。
 		它位于内边边界内部,通常有背景——颜色或图片（不透明图片盖住背景颜色）.
