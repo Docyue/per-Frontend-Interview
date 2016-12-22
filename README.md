@@ -197,7 +197,7 @@ JavaScript中跨域及header传参 </a>
 4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>  
 5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
 6、<a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" target='_blank'>深入理解JavaScript系列</a>  
-
+7、<a href="https://www.awesomes.cn/subject/react" target='_blank'>Awesomes - React专题</a>
 
 
 
