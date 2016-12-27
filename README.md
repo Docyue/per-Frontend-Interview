@@ -103,12 +103,27 @@ xx、[](#)
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md"  target='_blank'>JavaScript部分</a>
-1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#数据类型"  target='_blank'>
+1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h1"  target='_blank'>
 数据类型</a>  
-2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#2"  target='_blank'>
-null与undefined的不同点？</a>  
-3、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#3"  target='_blank'>
-说说js中的闭包和变量作用域？</a>  
+2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h2"  target='_blank'>
+函数，变量，作用域，闭包？</a>  
+3、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h3"  target='_blank'>
+事件，事件流，事件机制</a>  
+4、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h4"  target='_blank'>
+对象，对象继承，原型，原型链</a>  
+5、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h5"  target='_blank'>
+http，ajax，跨域，进程，TCP</a>  
+6、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h6"  target='_blank'>
+cookie，浏览器本地储存，缓存控制</a>  
+7、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h7"  target='_blank'>
+JS操作（数组，字符串，JSON）</a>  
+8、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h8"  target='_blank'>
+dom操作</a>  
+9、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h9"  target='_blank'>
+性能优化</a>  
+10、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h10"  target='_blank'>
+框架,其他</a>  
+
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 ## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md"  target='_blank'>JavaScript专题部分</a>
