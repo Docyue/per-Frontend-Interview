@@ -103,103 +103,32 @@ xx、[](#)
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md"  target='_blank'>JavaScript部分</a>
-1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#1"  target='_blank'>
-说说js的数据类型？</a>  
+1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#数据类型"  target='_blank'>
+数据类型</a>  
 2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#2"  target='_blank'>
 null与undefined的不同点？</a>  
 3、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#3"  target='_blank'>
 说说js中的闭包和变量作用域？</a>  
-4、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#4"  target='_blank'>
-说说js中的事件流？</a>  
-5、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#5"  target='_blank'>
-说说JS的对象,类和对象的继承？</a>  
-6、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#6"  target='_blank'>
-说说http请求和ajax 以及ajax跨域？</a>  
-7、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#7"  target='_blank'>
-说说浏览器本地存储？</a>  
-8、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#8"  target='_blank'>
-web storage和cookie的区别？</a>  
-9、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#9"  target='_blank'>
-请你谈谈Cookie的弊端？</a>  
-10、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#10"  target='_blank'>
-DOM操作——怎样添加、移除、移动、复制、创建和查找节点？</a>  
-11、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#11"  target='_blank'>
-iframe的优缺点？</a>  
-12、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#12"  target='_blank'>
-你如何对网站的文件和资源进行优化？</a>  
-13、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#13"  target='_blank'>
-线程与进程的区别？</a>  
-14、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#14"  target='_blank'>
-你如何对网站的文件和资源进行优化？</a>  
-15、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#15"  target='_blank'>
-请说出三种减少页面加载时间的方法？</a>  
-16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#16"  target='_blank'>
-new操作符具体干了什么呢？</a>  
-17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#17"  target='_blank'>
-JSON的了解？XML和JSON的区别？</a>  
-18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#18"  target='_blank'>
-js延迟加载的方式有哪些？</a>  
-19、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#19"  target='_blank'>
-哪些操作会造成内存泄漏？</a>  
-20、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#20"  target='_blank'>
-对Node的优点和缺点提出了自己的看法？</a>  
-21、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#21"  target='_blank'>
-你有哪些性能优化的方法？</a>  
-22、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#22"  target='_blank'>
-一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？</a>  
-23、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#23"  target='_blank'>
-什么是"use strict"; 使用它的好处和坏处分别是什么？</a>  
-24、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#24"  target='_blank'>
-哪些地方会出现css阻塞,哪些地方会出现js阻塞？</a>  
-25、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#25"  target='_blank'>
-Javascript无阻塞加载具体方式？</a>  
-26、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#26"  target='_blank'>
-写一个通用的事件侦听器函数？</a>  
-27、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#27"  target='_blank'>
-JavaScript原型,原型链？有什么特点？</a>  
-28、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#28"  target='_blank'>
-详解JavaScript模块化开发：AMD#1和CMD#1 规范的区别？</a>  
-29、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#29"  target='_blank'>
-如何获取UA？</a>  
-30、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#30"  target='_blank'>
-如何给js数组去重？</a>  
-31、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#31"  target='_blank'>
-js中的缓存控制(cache-control)？</a>  
-32、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#32"  target='_blank'>
-js操作获取和设置cookie？</a>  
-33、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#33"  target='_blank'>
-说说什么是函数柯里化？</a>  
-34、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#34"  target='_blank'>
-浏览器同源政策及其规避方法</a>  
-35、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#35"  target='_blank'>
-JavaScript被忽视的细节</a>   
-36、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#36"  target='_blank'>
-谈谈你对webpack的看法</a>  
-37、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#37"  target='_blank'>
-TCP和UDP的区别</a>  
-38、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#38"  target='_blank'>
-HTTP/2资料汇总</a>  
-39、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#39"  target='_blank'>
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md"  target='_blank'>JavaScript专题部分</a>
+1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#1"  target='_blank'>
 Javascript模块化编程</a>  
-40、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#40"  target='_blank'>
-chrome新版本地跨域</a>  
-41、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#41"  target='_blank'>
+2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#2"  target='_blank'>
 JavaScript函数式编程</a>  
-42、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#42"  target='_blank'>
-43、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#43"  target='_blank'>
-JavaScript中跨域及header传参 </a>  
-
+3、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#3"  target='_blank'>
+JavaScript中的Promise</a>  
 
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 ##参考资料部分  
 1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html" target='_blank'>jQuery 基本原理</a>  
 2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
 3、<a href="http://www.appinn.com/markdown/#philosophy" target='_blank'>Markdown语法</a>  
-4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>  
-5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
+4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
 6、<a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" target='_blank'>深入理解JavaScript系列</a>  
 7、<a href="https://www.awesomes.cn/subject/react" target='_blank'>Awesomes - React专题</a>
-
+8、<a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a>
+9、<a href="https://imququ.com/post/http2-resource.html" target='_blank'>HTTP/2资料汇总</a>
 
 
 [回顶部](#回顶部)

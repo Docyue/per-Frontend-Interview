@@ -1,56 +1,49 @@
 > <a name='回顶部'></a>  
-# JavaScript部分的问题及答案
+# JavaScript基础部分的问题及答案
 ####更新时间：2016-8-12
-### 问题  
-1、[说说js的数据类型？](#1)   
-2、[null与undefined的不同点？](#2)  
-3、[说说js中的闭包和变量作用域？](#3)  
-4、[说说js中的事件流？](#4)    
-5、[说说JS的对象,类和对象的继承？](#5)    
-6、[说说http请求和ajax 以及ajax跨域？](#6)   
-7、[说说浏览器本地存储？](#7)  
-8、[web storage和cookie的区别？](#8)  
-9、[请你谈谈Cookie的弊端？](#9)  
-10、[DOM操作——怎样添加、移除、移动、复制、创建和查找节点？](#10)   
-11、[iframe的优缺点？](#11)   
-12、[你如何对网站的文件和资源进行优化？](#12)  
-13、[线程与进程的区别？](#13)  
-14、[你如何对网站的文件和资源进行优化？](#14)  
-15、[请说出三种减少页面加载时间的方法？](#15)  
-16、[new操作符具体干了什么呢？](#16)  
-17、[JSON的了解？XML和JSON的区别？](#17)  
-18、[js延迟加载的方式有哪些？](#18)  
-19、[哪些操作会造成内存泄漏？](#19)  
-20、[对Node的优点和缺点提出了自己的看法？](#20)  
-21、[你有哪些性能优化的方法？](#21)  
-22、[一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？](#22)  
-23、[什么是"use strict"; 使用它的好处和坏处分别是什么？](#23)  
-24、[哪些地方会出现css阻塞,哪些地方会出现js阻塞？](#24)  
-25、[Javascript无阻塞加载具体方式？](#25)  
-26、[写一个通用的事件侦听器函数？](#26)  
-27、[JavaScript原型,原型链？有什么特点？](#27)  
-28、[详解JavaScript模块化开发：AMD和CMD 规范的区别？](#28)  
-29、[如何获取UA？](#29)  
-30、[如何给js数组去重？](#30) 
-31、[js中的缓存控制(cache-control)？](#31) 
-32、[js操作获取和设置cookie？](#32) 
-33、[说说什么是函数柯里化？](#33) 
-34、[浏览器同源政策及其规避方法](#34) 
-35、[JavaScript被忽视的细节](#35) 
-36、[谈谈你对webpack的看法](#36) 
-37、[TCP和UDP的区别](#37) 
-38、[HTTP/2 资料汇总](#38) 
-39、[Javascript模块化编程](#39) 
-40、[chrome新版本地跨域](#40) 
-41、[JavaScript函数式编程](#41) 
-42、[JavaScript中的Promise](#42) 
-43、[JavaScript中跨域及header传参](#43) 
+### 问题一览
+[**1、说说js的数据类型？**  ](#1)   
+[**2、null与undefined的不同点？**  ](#2)  
+[**3、说说js中的闭包和变量作用域？E6中的let,const有什么用途及区别**  ](#3)  
+[**4、说说什么是函数柯里化？**  ](#4)  
+[**5、说说js中的事件机制？**  ](#5)  
+[**6、写一个通用的事件侦听器函数？**  ](#6)  
+[**7、说说JS的对象,类和对象的继承？**  ](#7)  
+[**8、new操作符具体干了什么呢？**  ](#8)  
+[**9、JavaScript原型,原型链？有什么特点？**  ](#9)  
+[**10、JavaScript中跨域及header传参**  ](#10)
+[**11、说说http请求和ajax 以及ajax跨域？**  ](#11)  
+[**12、浏览器同源政策及其规避方法 和 跨域资源共享CORS详解**  ](#12)  
+[**13、chrome新版本地跨域**  ](#13)  
+[**14、TCP和UDP的区别**  ](#14)  
+[**15、一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？**  ](#15)  
+[**16、线程与进程的区别？**  ](#16)  
+[**17、js操作获取和设置cookie？**  ](#17)  
+[**18、说说浏览器本地存储？**  ](#18)  
+[**19、web storage和cookie的区别？**  ](#19)  
+[**20、请你谈谈Cookie的弊端？**  ](#20)  
+[**21、js中的缓存控制(cache-control)？**  ](#21)  
+[**22、如何给js数组去重？**  ](#22)  
+[**23、JSON的了解？XML和JSON的区别？**  ](#23)  
+[**24、DOM操作——怎样添加、移除、移动、复制、创建和查找节点？**  ](#24)  
+[**25、请说出三种减少页面加载时间和性能优化，文件资源优化的方法？**  ](#25)  
+[**26、js延迟加载的方式有哪些？**  ](#26)  
+[**27、哪些操作会造成内存泄漏？**  ](#27)  
+[**28、哪些地方会出现css阻塞,哪些地方会出现js阻塞？JS无阻塞加载具体方式？**  ](#28)  
+[**29、详解JavaScript模块化开发：AMD和CMD 规范的区别？**  ](#29)  
+[**30、iframe的优缺点？**  ](#30)  
+[**31、webSocket如何兼容低浏览器？**  ](#31)  
+[**32、Node的优点？**  ](#32)  
+[**33、什么是"use strict"; 使用它的好处和坏处分别是什么？**  ](#33)  
+[**34、如何获取UA？**  ](#34)  
+[**35、谈谈你对webpack的看法**  ](#35)  
+ 
 
 
 xx、[](#)  
-
----------------------------------------------------------分割线-----------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------
+------数据类型：<a name='h1'></a>
+---------------------------------------------------------------------------------------------
 <a name='1'></a>
 **1、说说js的数据类型？**  
 <font size=1>
@@ -111,7 +104,9 @@ xx、[](#)
 		（1） 作为函数的参数,表示该函数的参数不是对象。
 		（2） 作为对象原型链的终点。
 </font>
-
+---------------------------------------------------------------------------------------------
+------函数，变量，作用域，闭包：<a name='h2'></a>
+---------------------------------------------------------------------------------------------
 <a name='3'></a>
 **3、说说js中的闭包和变量作用域？E6中的let,const有什么用途及区别**  
 <font size=1>
@@ -245,7 +240,74 @@ xx、[](#)
 </font>
 
 <a name='4'></a>
-**4、说说js中的事件机制？**  
+**4、说说什么是函数柯里化？**  
+<font size=1>
+	// 柯里化的概念
+	闭包的我们之前已经接触到，先说说柯里化。柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。比如：
+
+	var adder = function(num){
+	    return function(y){
+	        return num + y;
+	    }
+	}
+	var inc = adder(1);
+	var dec = adder(-1);
+
+	这里的 inc/dec 两个变量事实上是两个新的函数，可以通过括号来调用，比如下例中的用法：
+	//inc, dec现在是两个新的函数，作用是将传入的参数值(+/-)1
+	print(inc(99));//100
+	print(dec(101));//100
+	print(adder(100)(2));//102
+	print(adder(2)(100));//102
+	-------------------------------------------------------------------------------------------------
+	// 柯里化的应用
+	根据柯里化的特性，我们可以写出更有意思的代码，比如在前端开发中经常会遇到这样的情况，当请求从服务端返回后，我们需要更新一些特定的页面元素，也就是局部刷新的概念。使用局部刷新非常简单，但是代码很容易写成一团乱麻。而如果使用柯里化，则可以很大程度上美化我们的代码，使之更容易维护。我们来看一个例子：
+	//update会返回一个函数，这个函数可以设置id属性为item的web元素的内容
+	function update(item){
+	    return function(text){
+	        $("div#"+item).html(text);
+	    }
+	}
+	//Ajax请求，当成功是调用参数callback
+	function refresh(url, callback){
+	    var params = {
+	        type : "echo",
+	        data : ""
+	    };
+	    $.ajax({
+	        type:"post",
+	        url:url,
+	        cache:false,
+	        async:true,
+	        dataType:"json",
+	        data:params,
+	        //当异步请求成功时调用
+	        success: function(data, status){
+	            callback(data);
+	        },
+	        //当请求出现错误时调用
+	        error: function(err){
+	            alert("error : "+err);
+	        }
+	    });
+	}
+	refresh("action.do?target=news", update("newsPanel"));
+	refresh("action.do?target=articles", update("articlePanel"));
+	refresh("action.do?target=pictures", update("picturePanel"));
+	-------------------------------------------------------------------------------------------------
+	// 柯里化总结
+	其中，update 函数即为柯里化的一个实例，它会返回一个函数，即：
+	    update("newsPanel") = function(text){
+	        $("div#newsPanel").html(text);
+	    }
+
+	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
+</font>
+---------------------------------------------------------------------------------------------
+------事件，事件流，事件机制：<a name='h3'></a>
+---------------------------------------------------------------------------------------------
+<a name='5'></a>
+**5、说说js中的事件机制？**  
 <font size=1>
 	
 	一、事件机制(事件流)
@@ -354,11 +416,95 @@ xx、[](#)
 	            window.event.returnValue = false;	//IE中阻止函数器默认动作的方式
 		    }
 		}
-	
 </font>
 
-<a name='5'></a>
-**5、说说JS的对象,类和对象的继承？**  
+<a name='6'></a>
+**6、写一个通用的事件侦听器函数？**  
+<font size=1>
+	
+	// event(事件)工具集
+    action.Event = {
+        // 页面加载完成后
+        readyEvent : function(fn) {
+            if (fn==null) {
+                fn=document;
+            }
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = fn;
+            } else {
+                window.onload = function() {
+                    oldonload();
+                    fn();
+                };
+            }
+        },
+        // 视能力分别使用dom0||dom2||IE方式 来绑定事件
+        // 参数： 操作的元素,事件名称 ,事件处理程序
+        addEvent : function(element, type, handler) {
+            if (element.addEventListener) {
+                //事件类型、需要执行的函数、是否捕捉
+                element.addEventListener(type, handler, false);
+            } else if (element.attachEvent) {
+                element.attachEvent('on' + type, function() {
+                    handler.call(element);
+                });
+            } else {
+                element['on' + type] = handler;
+            }
+        },
+        // 移除事件
+        removeEvent : function(element, type, handler) {
+            if (element.removeEventListener) {
+                element.removeEventListener(type, handler, false);
+            } else if (element.datachEvent) {
+                element.detachEvent('on' + type, handler);
+            } else {
+                element['on' + type] = null;
+            }
+        }, 
+        // 阻止事件 (主要是事件冒泡,因为IE不支持事件捕获)
+        stopPropagation : function(ev) {
+            if (ev.stopPropagation) {
+                ev.stopPropagation();
+            } else {
+                ev.cancelBubble = true;
+            }
+        },
+        // 取消事件的默认行为
+        preventDefault : function(ev) {
+            if (ev.preventDefault) {
+                ev.preventDefault();
+            } else {
+                ev.returnValue = false;
+            }
+        },
+        // 获取事件目标
+        getTarget : function(event) {
+            return event.target || event.srcElement;
+        },
+        // 获取event对象的引用,取到事件的所有信息,确保随时能使用event；
+        getEvent : function(e) {
+            var ev = e || window.event;
+            if (!ev) {
+                var c = this.getEvent.caller;
+                while (c) {
+                    ev = c.arguments[0];
+                    if (ev && Event == ev.constructor) {
+                        break;
+                    }
+                    c = c.caller;
+                }
+            }
+            return ev;
+        }
+    }; 
+</font>
+---------------------------------------------------------------------------------------------
+------对象，对象继承，原型，原型链：<a name='h4'></a>
+---------------------------------------------------------------------------------------------
+<a name='7'></a>
+**7、说说JS的对象,类和对象的继承？**  
 <font size=1>
 	
 	一、对象的定义,及构造函数 ：Javascript 面向对象编程（一）：封装
@@ -722,8 +868,42 @@ xx、[](#)
 			目前,jQuery库使用的就是这种继承方法。			
 </font>
 
-<a name='6'></a>
-**6、说说http请求和ajax 以及ajax跨域？**  
+<a name='8'></a>
+**8、new操作符具体干了什么呢？**  
+<font size=1> 
+
+	1、创建一个空对象,并且 this 变量引用该对象,同时还继承了该函数的原型。
+	2、属性和方法被加入到 this 引用的对象中。
+	3、新创建的对象由 this 所引用,并且最后隐式的返回 this 。
+		var obj  = {};
+		obj.__proto__ = Base.prototype;
+		Base.call(obj); 
+</font>
+
+<a name='9'></a>
+**9、JavaScript原型,原型链？有什么特点？**  
+<font size=1>
+	原型：
+	*  原型对象也是普通的对象,是对象一个自带隐式的 __proto__ 属性,
+		原型也有可能有自己的原型,如果一个原型对象的原型不为null的话,我们就称之为原型链。
+	------------------------------------------------------------------------------------------
+	原型链：
+	*  原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
+</font>
+---------------------------------------------------------------------------------------------
+------http，ajax，跨域，进程，TCP：<a name='h5'></a>
+---------------------------------------------------------------------------------------------
+<a name='10'></a>
+**10、JavaScript中跨域及header传参**  
+<font size=1>
+	1.第一步 服务端设置响应头
+	a、跨域：header('Access-Control-Allow-Origin:*');  
+	b、支持的http方式：header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE');
+	c、header传参数：header('Access-Control-Allow-Headers:x-requested-with,content-type,authToken'); 自定义header参数为（authToken为自定义参数，更多参数继续添加）
+</font>
+
+<a name='11'></a>
+**11、说说http请求和ajax 以及ajax跨域？**  
 <font size=1>
 	[http请求和ajax 以及ajax跨域？](http://segmentfault.com/a/1190000000691919)
 
@@ -1067,11 +1247,113 @@ xx、[](#)
 			2、安全问题 AJAX暴露了与服务器交互的细节。
 			3、对搜索引擎的支持比较弱。
 			4、破坏了程序的异常机制。
-
 </font>
 
-<a name='7'></a>
-**7、说说浏览器本地存储？**  
+<a name='12'></a>
+**12、浏览器同源政策及其规避方法 和 跨域资源共享CORS详解**  
+<font size=1>
+	<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
+	<a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
+</font>
+
+<a name='13'></a>
+**13、chrome新版本地跨域**   
+<font size=1>
+	[WINDOWS]
+	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
+	[MAC]
+	终端中输入（open -a "Google Chrome" --args --disable-web-security --user-data-dir）
+</font>
+
+<a name='14'></a>
+**14、TCP和UDP的区别**  
+<font size=1>
+	TCP（Transmission Control Protocol，传输控制协议）是基于连接的协议，也就是说，在正式收发数据前，必须和对方建立可靠的连接。一个TCP连接必须要经过三次“对话”才能建立起来
+	-------------------------------------------------------------------------------------------------
+	UDP（User Data Protocol，用户数据报协议）是与TCP相对应的协议。它是面向非连接的协议，它不与对方建立连接，而是直接就把数据包发送过去！ UDP适用于一次只传送少量数据、对可靠性要求不高的应用环境。
+</font>
+
+<a name='15'></a>
+**15、一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？**  
+<font size=1>
+
+	分为4个步骤：
+    1、当发送一个URL请求时,不管这个URL是Web页面的URL还是Web页面上每个资源的URL,
+    	浏览器都会开启一个线程来处理这个请求,同时在远程DNS服务器上启动一个DNS查询。
+    	这能使浏览器获得请求对应的IP地址。
+    2、浏览器与远程Web服务器通过TCP三次握手协商来建立一个TCP/IP连接。
+    	该握手包括一个同步报文,一个同步-应答报文和一个应答报文,这三个报文在 浏览器和服务器之间传递。
+    	该握手首先由客户端尝试建立起通信,而后服务器应答并接受客户端的请求,最后由客户端发出该请求已经被接受的报文。
+    3、一旦TCP/IP连接建立,浏览器会通过该连接向远程服务器发送HTTP的GET请求。
+    	远程服务器找到资源并使用HTTP响应返回该资源,值为200的HTTP响应状态表示一个正确的响应。
+    4、此时,Web服务器提供资源服务,客户端开始下载资源。
+
+	请求返回后,便进入了我们关注的前端模块：
+	简单来说,浏览器会解析HTML生成DOM Tree,其次会根据CSS生成CSS Rule Tree,而javascript又可以根据DOM API操作DOM；
+</font>
+
+<a name='16'></a>
+**16、线程与进程的区别？**  
+<font size=1>
+
+	*一个程序至少有一个进程,一个进程至少有一个线程. 	
+	*线程的划分尺度小于进程,使得多线程程序的并发性高。
+	*另外,进程在执行过程中拥有独立的内存单元,而多个线程共享内存,从而极大地提高了程序的运行效率。 
+
+	线程在执行过程中与进程还是有区别的:
+		*每个独立的线程有一个程序运行的入口、顺序执行序列和程序的出口。
+		*但是线程不能够独立执行,必须依存在应用程序中,由应用程序提供多个线程执行控制。 
+		*从逻辑角度来看,多线程的意义在于一个应用程序中,有多个执行部分可以同时执行。
+		*但操作系统并没有将多个线程看做多个独立的应用,来实现进程的调度和管理以及资源分配。
+</font>
+---------------------------------------------------------------------------------------------
+------cookie，浏览器本地储存，缓存控制：<a name='h6'></a>
+---------------------------------------------------------------------------------------------
+<a name='17'></a>
+**17、js操作获取和设置cookie？**  
+<font size=1>
+	
+	//创建cookie
+	function setCookie(name, value, expires, path, domain, secure) {
+	    var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+	    if (expires instanceof Date) {
+	        cookieText += '; expires=' + expires;
+	    }
+	    if (path) {
+	        cookieText += '; expires=' + expires;
+	    }
+	    if (domain) {
+	        cookieText += '; domain=' + domain;
+	    }
+	    if (secure) {
+	        cookieText += '; secure';
+	    }
+	    document.cookie = cookieText;
+	}
+	-------------------------------------------------------------------------------------------------
+	//获取cookie
+	function getCookie(name) {
+	    var cookieName = encodeURIComponent(name) + '=';
+	    var cookieStart = document.cookie.indexOf(cookieName);
+	    var cookieValue = null;
+	    if (cookieStart > -1) {
+	        var cookieEnd = document.cookie.indexOf(';', cookieStart);
+	        if (cookieEnd == -1) {
+	            cookieEnd = document.cookie.length;
+	        }
+	        cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
+	    }
+	    return cookieValue;
+	}
+	-------------------------------------------------------------------------------------------------
+	//删除cookie
+	function unsetCookie(name) {
+	    document.cookie = name + "= ; expires=" + new Date(0);
+	}
+</font>
+
+<a name='18'></a>
+**18、说说浏览器本地存储？**  
 <font size=1>
 	
 	1、在较高版本的浏览器中,js提供了sessionStorage和globalStorage
@@ -1083,8 +1365,8 @@ xx、[](#)
 	4、而localStorage用于持久化的本地存储,除非主动删除数据,否则数据是永远不会过期的。
 </font>
 
-<a name='8'></a>
-**8、web storage和cookie的区别？**  
+<a name='19'></a>
+**19、web storage和cookie的区别？**  
 <font size=1>
 	
 	Web Storage的概念和cookie相似,区别是它是为了更大容量存储设计的:
@@ -1104,8 +1386,8 @@ xx、[](#)
 	5、localStorage和sessionStorage都具有相同的操作方法,例如setItem、getItem和removeItem等
 </font>
 
-<a name='9'></a>
-**9、请你谈谈Cookie的弊端？**  
+<a name='20'></a>
+**20、请你谈谈Cookie的弊端？**  
 <font size=1>
 	
 	cookie虽然在持久保存客户端数据提供了方便,分担了服务器存储的负担,但还是有很多局限性的。
@@ -1133,8 +1415,107 @@ xx、[](#)
 			如果我们把这个计数器保存在客户端,那么它起不到任何作用。
 </font>
 
-<a name='10'></a>
-**10、DOM操作——怎样添加、移除、移动、复制、创建和查找节点？**  
+<a name='21'></a>
+**21、js中的缓存控制(cache-control)？**  
+<font size=1>
+	
+	* 网页的缓存是由HTTP消息头中的“Cache-control”来控制的：
+		常见的取值有private、no-cache、max-age、must-revalidate等，默认为private。
+
+	* Expires 头部字段提供一个日期和时间，响应在该日期和时间后被认为失效。
+		允许客户端在这个时间之前不去检查（发请求），等同max-age的效果。
+		但是如果同时存在，则被Cache-Control的max-age覆盖。
+		Expires = "Expires" ":" HTTP-date
+
+		例如
+		Expires: Thu, 01 Dec 1994 16:00:00 GMT （必须是GMT格式）
+
+	*** 如果把它设置为-1，则表示立即过期
+	-------------------------------------------------------------------------------------------------
+	Expires和max-age都可以用来指定文档的过期时间，但是二者有一些细微差别：
+		1.Expires在HTTP/1.0中已经定义，Cache-Control:max-age在HTTP/1.1中才有定义，
+			为了向下兼容，仅使用max-age不够；
+		2.Expires指定一个绝对的过期时间(GMT格式),这么做会导致至少2个问题：
+			1)客户端和服务器时间不同步导致Expires的配置出现问题。 
+			2）很容易在配置后忘记具体的过期时间，导致过期来临出现浪涌现象；
+		3.max-age 指定的是从文档被访问后的存活时间，这个时间是个相对值(比如:3600s),
+			相对的是文档第一次被请求时服务器记录的Request_time(请求时间)
+		4.Expires指定的时间可以是相对文件的最后访问时间(Atime)或者修改时间(MTime),
+			而max-age相对对的是文档的请求时间(Atime)
+
+		*** 如果值为no-cache,那么每次都会访问服务器。如果值为max-age,则在过期之前不会重复访问服务器。
+</font>
+---------------------------------------------------------------------------------------------
+JS操作（数组，字符串，JSON）：<a name='h7'></a>
+---------------------------------------------------------------------------------------------
+<a name='22'></a>
+**22、如何给js数组去重？**  
+<font size=1>
+	
+	以下是数组去重的三种方法：
+	Array.prototype.unique1 = function () {
+	  var n = []; //一个新的临时数组
+	  for (var i = 0; i < this.length; i++) //遍历当前数组
+	  {
+	    //如果当前数组的第i已经保存进了临时数组，那么跳过，
+	    //否则把当前项push到临时数组里面
+	    if (n.indexOf(this[i]) == -1) n.push(this[i]);
+	  }
+	  return n;
+	}
+	-------------------------------------------------------------------------------------------------
+	Array.prototype.unique2 = function()
+	{
+	    var n = {},r=[]; //n为hash表，r为临时数组
+	    for(var i = 0; i < this.length; i++) //遍历当前数组
+	    {
+	        if (!n[this[i]]) //如果hash表中没有当前项
+	        {
+	            n[this[i]] = true; //存入hash表
+	            r.push(this[i]); //把当前数组的当前项push到临时数组里面
+	        }
+	    }
+	    return r;
+	}
+	-------------------------------------------------------------------------------------------------
+	Array.prototype.unique3 = function()
+	{
+	    var n = [this[0]]; //结果数组
+	    for(var i = 1; i < this.length; i++) //从第二项开始遍历
+	    {
+	        //如果当前数组的第i项在当前数组中第一次出现的位置不是i，
+	        //那么表示第i项是重复的，忽略掉。否则存入结果数组
+	        if (this.indexOf(this[i]) == i) n.push(this[i]);
+	    }
+	    return n;
+	}
+</font>
+
+<a name='23'></a>
+**23、JSON的了解？XML和JSON的区别？**  
+<font size=1>
+	*了解：
+	JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
+		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小；
+		{'age':'12', 'name':'back'}
+		JSON.parse('str') 				//转换string为JSON格式
+		JSON.stringfy('JSON') 			//转换JSON为string格式
+
+	*区别：
+	(1).数据体积方面。	
+		JSON相对于XML来讲，数据的体积小，传递的速度更快些。
+	(2).数据交互方面。
+		JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互。
+	(3).数据描述方面。
+		JSON对数据的描述性比XML较差。
+	(4).传输速度方面。
+		JSON的速度要远远快于XML。
+</font>
+---------------------------------------------------------------------------------------------
+------dom操作：<a name='h8'></a>
+---------------------------------------------------------------------------------------------
+<a name='24'></a>
+**24、DOM操作——怎样添加、移除、移动、复制、创建和查找节点？**  
 <font size=1>
 	
 	（1）创建新节点
@@ -1152,46 +1533,11 @@ xx、[](#)
 		getElementsByName()    //通过元素的Name属性的值 (IE容错能力较强,会得到一个数组,其中包括id等于name值的)
 		getElementById()    	//通过元素Id,唯一性
 </font>
-
-<a name='11'></a>
-**11、iframe的优缺点？**  
-<font size=1>
-
-	1.<iframe>优点：
-	    *解决加载缓慢的第三方内容如图标和广告等的加载问题;
-	    *Security sandbox;
-	    *并行加载脚本;
-	2.<iframe>的缺点：
-	    *iframe会阻塞主页面的Onload事件;
-	    *即时内容为空,加载也需要时间;
-	    *没有语意;
-</font>
-
-<a name='12'></a>
-**12、webSocket如何兼容低浏览器？**  
-<font size=1>
-	
-	Adobe Flash Socket 、 ActiveX HTMLFile (IE) 、 基于 multipart 编码发送 XHR 、 基于长轮询的 XHR
-</font>
-
-<a name='13'></a>
-**13、线程与进程的区别？**  
-<font size=1>
-
-	*一个程序至少有一个进程,一个进程至少有一个线程. 	
-	*线程的划分尺度小于进程,使得多线程程序的并发性高。
-	*另外,进程在执行过程中拥有独立的内存单元,而多个线程共享内存,从而极大地提高了程序的运行效率。 
-
-	线程在执行过程中与进程还是有区别的:
-		*每个独立的线程有一个程序运行的入口、顺序执行序列和程序的出口。
-		*但是线程不能够独立执行,必须依存在应用程序中,由应用程序提供多个线程执行控制。 
-		*从逻辑角度来看,多线程的意义在于一个应用程序中,有多个执行部分可以同时执行。
-		*但操作系统并没有将多个线程看做多个独立的应用,来实现进程的调度和管理以及资源分配。
-
-</font>
-
-<a name='14'></a>
-**14、请说出三种减少页面加载时间和性能优化，文件资源优化的方法？**  
+---------------------------------------------------------------------------------------------
+性能优化：<a name='h9'></a>
+---------------------------------------------------------------------------------------------
+<a name='25'></a>
+**25、请说出三种减少页面加载时间和性能优化，文件资源优化的方法？**  
 <font size=1>
 	// 一、加载时间
 		1.优化图片 
@@ -1217,48 +1563,15 @@ xx、[](#)
 		文件合并,文件最小化/文件压缩, 使用 CDN 托管, 缓存的使用（多个域名来提供缓存）等
 </font>
 
-<a name='15'></a>
-**15、new操作符具体干了什么呢？**  
-<font size=1> 
-
-	1、创建一个空对象,并且 this 变量引用该对象,同时还继承了该函数的原型。
-	2、属性和方法被加入到 this 引用的对象中。
-	3、新创建的对象由 this 所引用,并且最后隐式的返回 this 。
-		var obj  = {};
-		obj.__proto__ = Base.prototype;
-		Base.call(obj); 
-</font>
-
-<a name='16'></a>
-**16、JSON的了解？XML和JSON的区别？**  
-<font size=1>
-	*了解：
-	JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
-		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小；
-		{'age':'12', 'name':'back'}
-		JSON.parse('str') 				//转换string为JSON格式
-		JSON.stringfy('JSON') 			//转换JSON为string格式
-
-	*区别：
-	(1).数据体积方面。	
-		JSON相对于XML来讲，数据的体积小，传递的速度更快些。
-	(2).数据交互方面。
-		JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互。
-	(3).数据描述方面。
-		JSON对数据的描述性比XML较差。
-	(4).传输速度方面。
-		JSON的速度要远远快于XML。
-</font>
-
-<a name='17'></a>
-**17、js延迟加载的方式有哪些？**  
+<a name='26'></a>
+**26、js延迟加载的方式有哪些？**  
 <font size=1>
 	
 	defer和async、动态创建DOM方式（创建script,插入到DOM中,加载完毕后callBack）、按需异步载入js
 </font>
 
-<a name='18'></a>
-**18、哪些操作会造成内存泄漏？**  
+<a name='27'></a>
+**27、哪些操作会造成内存泄漏？**  
 <font size=1>
 	
 	*内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
@@ -1271,56 +1584,8 @@ xx、[](#)
 	*闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时,就会产生一个循环）
 </font>
 
-<a name='19'></a>
-**19、Node的优点？**  
-<font size=1>
-	因为Node是基于事件驱动和无阻塞的,所以非常适合处理并发请求,
-	因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。
-	此外,与Node代理服务器交互的客户端代码是由javascript语言编写的,
-	因此客户端和服务器端都用同一种语言编写,这是非常美妙的事情。
-</font>
-
-<a name='20'></a>
-**20、一个页面从输入URL到页面加载显示完成,这个过程中都发生了什么？**  
-<font size=1>
-
-	分为4个步骤：
-    1、当发送一个URL请求时,不管这个URL是Web页面的URL还是Web页面上每个资源的URL,
-    	浏览器都会开启一个线程来处理这个请求,同时在远程DNS服务器上启动一个DNS查询。
-    	这能使浏览器获得请求对应的IP地址。
-    2、浏览器与远程Web服务器通过TCP三次握手协商来建立一个TCP/IP连接。
-    	该握手包括一个同步报文,一个同步-应答报文和一个应答报文,这三个报文在 浏览器和服务器之间传递。
-    	该握手首先由客户端尝试建立起通信,而后服务器应答并接受客户端的请求,最后由客户端发出该请求已经被接受的报文。
-    3、一旦TCP/IP连接建立,浏览器会通过该连接向远程服务器发送HTTP的GET请求。
-    	远程服务器找到资源并使用HTTP响应返回该资源,值为200的HTTP响应状态表示一个正确的响应。
-    4、此时,Web服务器提供资源服务,客户端开始下载资源。
-
-	请求返回后,便进入了我们关注的前端模块：
-	简单来说,浏览器会解析HTML生成DOM Tree,其次会根据CSS生成CSS Rule Tree,而javascript又可以根据DOM API操作DOM；
-</font>
-
-<a name='21'></a>
-**21、什么是"use strict"; 使用它的好处和坏处分别是什么？**  
-<font size=1>
-	
-	ECMAscript 5添加了第二种运行模式："严格模式"（strict mode）。
-	顾名思义,这种模式使得Javascript在更严格的条件下运行。
-
-	设立"严格模式"的目的,主要有以下几个：
-		1、消除Javascript语法的一些不合理、不严谨之处,减少一些怪异行为;
-		2、消除代码运行的一些不安全之处,保证代码运行的安全；
-		3、提高编译器效率,增加运行速度；
-		4、为未来新版本的Javascript做好铺垫。
-		*注：经过测试IE6,7,8,9均不支持严格模式。
-
-	缺点： 
-		1、现在网站的JS 都会进行压缩,一些文件用了严格模式,而另一些没有。
-		2、这时这些本来是严格模式的文件,被 merge 后,这个串就到了文件的中间,
-		  不仅没有指示严格模式,反而在压缩后浪费了字节。
-</font>
-
-<a name='22'></a>
-**22、哪些地方会出现css阻塞,哪些地方会出现js阻塞？JS无阻塞加载具体方式？**  
+<a name='28'></a>
+**28、哪些地方会出现css阻塞,哪些地方会出现js阻塞？JS无阻塞加载具体方式？**  
 <font size=1>
 	
 	JS的阻塞特性：
@@ -1364,110 +1629,70 @@ xx、[](#)
 		此技术的重点在于：
 		无论在何处启动下载,文件额下载和运行都不会阻塞其他页面处理过程,即使在head里（除了用于下载文件的http链接）;
 </font>
-
-<a name='23'></a>
-**23、写一个通用的事件侦听器函数？**  
-<font size=1>
-	
-	// event(事件)工具集
-    action.Event = {
-        // 页面加载完成后
-        readyEvent : function(fn) {
-            if (fn==null) {
-                fn=document;
-            }
-            var oldonload = window.onload;
-            if (typeof window.onload != 'function') {
-                window.onload = fn;
-            } else {
-                window.onload = function() {
-                    oldonload();
-                    fn();
-                };
-            }
-        },
-        // 视能力分别使用dom0||dom2||IE方式 来绑定事件
-        // 参数： 操作的元素,事件名称 ,事件处理程序
-        addEvent : function(element, type, handler) {
-            if (element.addEventListener) {
-                //事件类型、需要执行的函数、是否捕捉
-                element.addEventListener(type, handler, false);
-            } else if (element.attachEvent) {
-                element.attachEvent('on' + type, function() {
-                    handler.call(element);
-                });
-            } else {
-                element['on' + type] = handler;
-            }
-        },
-        // 移除事件
-        removeEvent : function(element, type, handler) {
-            if (element.removeEventListener) {
-                element.removeEventListener(type, handler, false);
-            } else if (element.datachEvent) {
-                element.detachEvent('on' + type, handler);
-            } else {
-                element['on' + type] = null;
-            }
-        }, 
-        // 阻止事件 (主要是事件冒泡,因为IE不支持事件捕获)
-        stopPropagation : function(ev) {
-            if (ev.stopPropagation) {
-                ev.stopPropagation();
-            } else {
-                ev.cancelBubble = true;
-            }
-        },
-        // 取消事件的默认行为
-        preventDefault : function(ev) {
-            if (ev.preventDefault) {
-                ev.preventDefault();
-            } else {
-                ev.returnValue = false;
-            }
-        },
-        // 获取事件目标
-        getTarget : function(event) {
-            return event.target || event.srcElement;
-        },
-        // 获取event对象的引用,取到事件的所有信息,确保随时能使用event；
-        getEvent : function(e) {
-            var ev = e || window.event;
-            if (!ev) {
-                var c = this.getEvent.caller;
-                while (c) {
-                    ev = c.arguments[0];
-                    if (ev && Event == ev.constructor) {
-                        break;
-                    }
-                    c = c.caller;
-                }
-            }
-            return ev;
-        }
-    }; 
-</font>
-
-<a name='24'></a>
-**24、JavaScript原型,原型链？有什么特点？**  
-<font size=1>
-	原型：
-	*  原型对象也是普通的对象,是对象一个自带隐式的 __proto__ 属性,
-		原型也有可能有自己的原型,如果一个原型对象的原型不为null的话,我们就称之为原型链。
-	------------------------------------------------------------------------------------------
-	原型链：
-	*  原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
-</font>
-
-<a name='25'></a>
-**25、详解JavaScript模块化开发：AMD和CMD 规范的区别？**  
+---------------------------------------------------------------------------------------------
+------模块化：<a name='h10'></a>
+---------------------------------------------------------------------------------------------
+<a name='29'></a>
+**29、详解JavaScript模块化开发：AMD和CMD 规范的区别？**  
 <font size=1>
 
 	[详解JavaScript模块化开发：AMD和CMD 规范的区别？](http://segmentfault.com/a/1190000000733959)
 </font>
+---------------------------------------------------------------------------------------------
+------其他技术，框架：<a name='h11'></a>
+---------------------------------------------------------------------------------------------
+<a name='30'></a>
+**30、iframe的优缺点？**  
+<font size=1>
 
-<a name='26'></a>
-**26、如何获取UA？**  
+	1.<iframe>优点：
+	    *解决加载缓慢的第三方内容如图标和广告等的加载问题;
+	    *Security sandbox;
+	    *并行加载脚本;
+	2.<iframe>的缺点：
+	    *iframe会阻塞主页面的Onload事件;
+	    *即时内容为空,加载也需要时间;
+	    *没有语意;
+</font>
+
+<a name='31'></a>
+**31、webSocket如何兼容低浏览器？**  
+<font size=1>
+	
+	Adobe Flash Socket 、 ActiveX HTMLFile (IE) 、 基于 multipart 编码发送 XHR 、 基于长轮询的 XHR
+</font>
+
+<a name='32'></a>
+**32、Node的优点？**  
+<font size=1>
+	因为Node是基于事件驱动和无阻塞的,所以非常适合处理并发请求,
+	因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。
+	此外,与Node代理服务器交互的客户端代码是由javascript语言编写的,
+	因此客户端和服务器端都用同一种语言编写,这是非常美妙的事情。
+</font>
+
+<a name='33'></a>
+**33、什么是"use strict"; 使用它的好处和坏处分别是什么？**  
+<font size=1>
+	
+	ECMAscript 5添加了第二种运行模式："严格模式"（strict mode）。
+	顾名思义,这种模式使得Javascript在更严格的条件下运行。
+
+	设立"严格模式"的目的,主要有以下几个：
+		1、消除Javascript语法的一些不合理、不严谨之处,减少一些怪异行为;
+		2、消除代码运行的一些不安全之处,保证代码运行的安全；
+		3、提高编译器效率,增加运行速度；
+		4、为未来新版本的Javascript做好铺垫。
+		*注：经过测试IE6,7,8,9均不支持严格模式。
+
+	缺点： 
+		1、现在网站的JS 都会进行压缩,一些文件用了严格模式,而另一些没有。
+		2、这时这些本来是严格模式的文件,被 merge 后,这个串就到了文件的中间,
+		  不仅没有指示严格模式,反而在压缩后浪费了字节。
+</font>
+
+<a name='34'></a>
+**34、如何获取UA？**  
 <font size=1>
 	
 	<script> 
@@ -1480,211 +1705,18 @@ xx、[](#)
 	</script>
 </font>
 
-<a name='27'></a>
-**27、如何给js数组去重？**  
-<font size=1>
-	
-	以下是数组去重的三种方法：
-	Array.prototype.unique1 = function () {
-	  var n = []; //一个新的临时数组
-	  for (var i = 0; i < this.length; i++) //遍历当前数组
-	  {
-	    //如果当前数组的第i已经保存进了临时数组，那么跳过，
-	    //否则把当前项push到临时数组里面
-	    if (n.indexOf(this[i]) == -1) n.push(this[i]);
-	  }
-	  return n;
-	}
-	-------------------------------------------------------------------------------------------------
-	Array.prototype.unique2 = function()
-	{
-	    var n = {},r=[]; //n为hash表，r为临时数组
-	    for(var i = 0; i < this.length; i++) //遍历当前数组
-	    {
-	        if (!n[this[i]]) //如果hash表中没有当前项
-	        {
-	            n[this[i]] = true; //存入hash表
-	            r.push(this[i]); //把当前数组的当前项push到临时数组里面
-	        }
-	    }
-	    return r;
-	}
-	-------------------------------------------------------------------------------------------------
-	Array.prototype.unique3 = function()
-	{
-	    var n = [this[0]]; //结果数组
-	    for(var i = 1; i < this.length; i++) //从第二项开始遍历
-	    {
-	        //如果当前数组的第i项在当前数组中第一次出现的位置不是i，
-	        //那么表示第i项是重复的，忽略掉。否则存入结果数组
-	        if (this.indexOf(this[i]) == i) n.push(this[i]);
-	    }
-	    return n;
-	}
-</font>
-
-<a name='28'></a>
-**28、js中的缓存控制(cache-control)？**  
-<font size=1>
-	
-	* 网页的缓存是由HTTP消息头中的“Cache-control”来控制的：
-		常见的取值有private、no-cache、max-age、must-revalidate等，默认为private。
-
-	* Expires 头部字段提供一个日期和时间，响应在该日期和时间后被认为失效。
-		允许客户端在这个时间之前不去检查（发请求），等同max-age的效果。
-		但是如果同时存在，则被Cache-Control的max-age覆盖。
-		Expires = "Expires" ":" HTTP-date
-
-		例如
-		Expires: Thu, 01 Dec 1994 16:00:00 GMT （必须是GMT格式）
-
-	*** 如果把它设置为-1，则表示立即过期
-	-------------------------------------------------------------------------------------------------
-	Expires和max-age都可以用来指定文档的过期时间，但是二者有一些细微差别：
-		1.Expires在HTTP/1.0中已经定义，Cache-Control:max-age在HTTP/1.1中才有定义，
-			为了向下兼容，仅使用max-age不够；
-		2.Expires指定一个绝对的过期时间(GMT格式),这么做会导致至少2个问题：
-			1)客户端和服务器时间不同步导致Expires的配置出现问题。 
-			2）很容易在配置后忘记具体的过期时间，导致过期来临出现浪涌现象；
-		3.max-age 指定的是从文档被访问后的存活时间，这个时间是个相对值(比如:3600s),
-			相对的是文档第一次被请求时服务器记录的Request_time(请求时间)
-		4.Expires指定的时间可以是相对文件的最后访问时间(Atime)或者修改时间(MTime),
-			而max-age相对对的是文档的请求时间(Atime)
-
-		*** 如果值为no-cache,那么每次都会访问服务器。如果值为max-age,则在过期之前不会重复访问服务器。
-</font>
-
-<a name='29'></a>
-**29、js操作获取和设置cookie？**  
-<font size=1>
-	
-	//创建cookie
-	function setCookie(name, value, expires, path, domain, secure) {
-	    var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
-	    if (expires instanceof Date) {
-	        cookieText += '; expires=' + expires;
-	    }
-	    if (path) {
-	        cookieText += '; expires=' + expires;
-	    }
-	    if (domain) {
-	        cookieText += '; domain=' + domain;
-	    }
-	    if (secure) {
-	        cookieText += '; secure';
-	    }
-	    document.cookie = cookieText;
-	}
-	-------------------------------------------------------------------------------------------------
-	//获取cookie
-	function getCookie(name) {
-	    var cookieName = encodeURIComponent(name) + '=';
-	    var cookieStart = document.cookie.indexOf(cookieName);
-	    var cookieValue = null;
-	    if (cookieStart > -1) {
-	        var cookieEnd = document.cookie.indexOf(';', cookieStart);
-	        if (cookieEnd == -1) {
-	            cookieEnd = document.cookie.length;
-	        }
-	        cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
-	    }
-	    return cookieValue;
-	}
-	-------------------------------------------------------------------------------------------------
-	//删除cookie
-	function unsetCookie(name) {
-	    document.cookie = name + "= ; expires=" + new Date(0);
-	}
-</font>
-
-<a name='33'></a>
-**33、说说什么是函数柯里化？**  
-<font size=1>
-	// 柯里化的概念
-	闭包的我们之前已经接触到，先说说柯里化。柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。比如：
-
-	var adder = function(num){
-	    return function(y){
-	        return num + y;
-	    }
-	}
-	var inc = adder(1);
-	var dec = adder(-1);
-
-	这里的 inc/dec 两个变量事实上是两个新的函数，可以通过括号来调用，比如下例中的用法：
-	//inc, dec现在是两个新的函数，作用是将传入的参数值(+/-)1
-	print(inc(99));//100
-	print(dec(101));//100
-	print(adder(100)(2));//102
-	print(adder(2)(100));//102
-	-------------------------------------------------------------------------------------------------
-	// 柯里化的应用
-	根据柯里化的特性，我们可以写出更有意思的代码，比如在前端开发中经常会遇到这样的情况，当请求从服务端返回后，我们需要更新一些特定的页面元素，也就是局部刷新的概念。使用局部刷新非常简单，但是代码很容易写成一团乱麻。而如果使用柯里化，则可以很大程度上美化我们的代码，使之更容易维护。我们来看一个例子：
-	//update会返回一个函数，这个函数可以设置id属性为item的web元素的内容
-	function update(item){
-	    return function(text){
-	        $("div#"+item).html(text);
-	    }
-	}
-	//Ajax请求，当成功是调用参数callback
-	function refresh(url, callback){
-	    var params = {
-	        type : "echo",
-	        data : ""
-	    };
-	    $.ajax({
-	        type:"post",
-	        url:url,
-	        cache:false,
-	        async:true,
-	        dataType:"json",
-	        data:params,
-	        //当异步请求成功时调用
-	        success: function(data, status){
-	            callback(data);
-	        },
-	        //当请求出现错误时调用
-	        error: function(err){
-	            alert("error : "+err);
-	        }
-	    });
-	}
-	refresh("action.do?target=news", update("newsPanel"));
-	refresh("action.do?target=articles", update("articlePanel"));
-	refresh("action.do?target=pictures", update("picturePanel"));
-	-------------------------------------------------------------------------------------------------
-	// 柯里化总结
-	其中，update 函数即为柯里化的一个实例，它会返回一个函数，即：
-	    update("newsPanel") = function(text){
-	        $("div#newsPanel").html(text);
-	    }
-
-	由于 update(“newsPanel”)的返回值为一个函数，需要的参数为一个字符串，因此在refresh 的 Ajax 调用中，当 success 时，会给 callback 传入服务器端返回的数据信息，从而实现 newsPanel 面板的刷新，其他的文章面板 articlePanel,图片面板 picturePanel的刷新均采取这种方式，这样，代码的可读性，可维护性均得到了提高。
-</font>
-<a name='34'></a>
-**34、浏览器同源政策及其规避方法 和 跨域资源共享CORS详解**  
-<font size=1>
-	<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target='_blank'>浏览器同源政策及其规避方法</a> 
-	<a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target='_blank'>跨域资源共享CORS详解</a> 
-</font>
-
 <a name='35'></a>
-**35、JavaScript被忽视的细节**  
-<font size=1>
-<a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a> 
-</font>
-
-<a name='36'></a>
-**36、谈谈你对webpack的看法**  
+**35、谈谈你对webpack的看法**  
 <font size=1>
 WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块依赖，并编绎输出模块们所需的静态文件。它能够很好地管理、打包Web开发中所用到的HTML、Javascript、CSS以及各种静态文件（图片、字体等），让开发过程更加高效。对于不同类型的资源，webpack有对应的模块加载器。webpack模块打包器会分析模块间的依赖关系，最后 生成了优化且合并后的静态资源。
 	
-	webpack的两大特色：
+	webpack的安大特色：
 	1.code splitting（可以自动完成）
 	2.loader 可以处理各种类型的静态文件，并且支持串联操作
-	webpack 是以commonJS的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
-
--------------------------------------------------------------------------------------------------
+	  webpack 是以commonJS的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
+	3、强大的插件功能
+	
+	-------------------------------------------------------------------------------------------------
 
 	webpack具有requireJs和browserify的功能，但仍有很多自己的新特性：
 	1. 对 CommonJS 、 AMD 、ES6的语法做了兼容
@@ -1694,68 +1726,18 @@ WebPack 是一个模块打包工具，你可以使用WebPack管理你的模块�
 	5. 可以将代码切割成不同的chunk，实现按需加载，降低了初始化时间
 	6. 支持 SourceUrls 和 SourceMaps，易于调试
 	7. 具有强大的Plugin接口，大多是内部插件，使用起来比较灵活
-	8.webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快
-
-</font>
-
-<a name='37'></a>
-**37、TCP和UDP的区别**  
-<font size=1>
-	TCP（Transmission Control Protocol，传输控制协议）是基于连接的协议，也就是说，在正式收发数据前，必须和对方建立可靠的连接。一个TCP连接必须要经过三次“对话”才能建立起来
-	-------------------------------------------------------------------------------------------------
-	UDP（User Data Protocol，用户数据报协议）是与TCP相对应的协议。它是面向非连接的协议，它不与对方建立连接，而是直接就把数据包发送过去！ UDP适用于一次只传送少量数据、对可靠性要求不高的应用环境。
-</font>
-
-<a name='38'></a>
-**38、HTTP/2资料汇总**  
-<font size=1>
-	<a href="https://imququ.com/post/http2-resource.html" target='_blank'>HTTP/2资料汇总</a> 
-</font>
-
-<a name='39'></a>
-**39、Javascript模块化编程**  
-<font size=1>
-	<a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target='_blank'>Javascript模块化编程（一）：模块的写法</a> 
-	<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target='_blank'>Javascript模块化编程（二）：AMD规范</a> 
-	<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target='_blank'>Javascript模块化编程（三）：require.js的用法</a> 
-</font>
-
-<a name='40'></a>
-**40、chrome新版本地跨域**  
-<font size=1>
-	[WINDOWS]
-	chrome图标右键 —— 属性 ——目标（添加--args --disable-web-security --user-data-dir）
-	[MAC]
-	终端中输入（open -a "Google Chrome" --args --disable-web-security --user-data-dir）
-</font>
-
-<a name='41'></a>
-**41、JavaScript函数式编程**  
-<font size=1>
-	<a href="http://qianduan.guru/2016/04/29/functional-programming-for-javascript-people/">JavaScript函数式编程</a>
-	<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
+	8. webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快
 </font>
 
 
-<a name='42'></a>
-**42、JavaScript中的Promise**  
-<font size=1>
-	<a href="http://taobaofed.org/blog/2016/05/03/promise-anti-patterns/">Promise反模式</a>
-	<a href="https://www.h5jun.com/post/wait-promise.html">Promise 与定时器</a>	
-</font>
 
-<a name='43'></a>
-**43、JavaScript中跨域及header传参**  
-<font size=1>
-	1.第一步 服务端设置响应头
-	a、跨域：header('Access-Control-Allow-Origin:*');  
-	b、支持的http方式：header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE');
-	c、header传参数：header('Access-Control-Allow-Headers:x-requested-with,content-type,authToken'); 自定义header参数为（authToken为自定义参数，更多参数继续添加）
-</font>
+
+
+
+
 
 <a name='XX'></a>
 **XX、**  
 <font size=1>
-
 </font>
 [回顶部](#回顶部)
