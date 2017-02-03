@@ -12,7 +12,7 @@
 [**5、说说js中的事件机制？**  ](#5)  
 [**6、写一个通用的事件侦听器函数？**  ](#6)  
 {----对象，对象继承，原型，原型链----}
-[**7、说说JS的对象,类和对象的继承？**  ](#7)  
+[**7、说说JS的对象,类和对象的继承？以及ES6对象的继承？**  ](#7)  
 [**8、new操作符具体干了什么呢？**  ](#8)  
 [**9、JavaScript原型,原型链？有什么特点？**  ](#9) 
 {-----http，ajax，跨域，进程，TCP----}
@@ -514,7 +514,7 @@ xx、[](#)
 ------对象，对象继承，原型，原型链：<a name='h4'></a>
 ---------------------------------------------------------------------------------------------
 <a name='7'></a>
-**7、说说JS的对象,类和对象的继承？**  
+**7、说说JS的对象,类和对象的继承？以及ES6对象的继承？**  
 <font size=1>
 	
 	一、对象的定义,及构造函数 ：Javascript 面向对象编程（一）：封装
@@ -876,6 +876,40 @@ xx、[](#)
 			　　alert(Doctor.birthPlaces); //北京, 上海, 香港, 厦门
 			　　alert(Chinese.birthPlaces); //北京, 上海, 香港
 			目前,jQuery库使用的就是这种继承方法。			
+	---------------------------------------分割线---------------------------------------
+	四、ES6对象的继承
+		ES6 的类是在基于原型的面向对象模式之上的简单语法糖，它有唯一的、便捷的声明形式，这使得类模式更容易使用，并且鼓励了互操作性。class定义的类支持基于原型的继承、super 调用、实例和静态方法以及构造函数。
+		
+		class Animal {
+		    constructor(){
+		        this.type = 'animal'
+		    }
+		    says(say){
+		        console.log(this.type + ' says ' + say)
+		    }
+		}
+
+		let animal = new Animal()
+		animal.says('hello') //animal says hello
+
+		class Cat extends Animal {
+		    constructor(){
+		        super()
+		        this.type = 'cat'
+		    }
+		}
+
+		let cat = new Cat()
+		cat.says('hello') //cat says hello
+	定义：
+	上面代码首先用class定义了一个“类”，可以看到里面有一个constructor方法，这就是构造方法，而this关键字则代表实例对象。简单地说，constructor内定义的方法和属性是实例对象自己的，而constructor外定义的方法和属性则是所有实例对象可以共享的。
+	继承：
+	Class之间可以通过extends关键字实现继承，这比ES5的通过修改原型链实现继承，要清晰和方便很多。上面定义了一个Cat类，该类通过extends关键字，继承了Animal类的所有属性和方法。
+	指向：
+	super关键字，它指代父类的实例（即父类的this对象）。子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。
+
+	ES6的继承机制，实质是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this。
+	PS如果你写react的话，就会发现以上三个东西在最新版React中出现得很多。创建的每个component都是一个继承React.Component的类。
 </font>
 
 <a name='8'></a>
