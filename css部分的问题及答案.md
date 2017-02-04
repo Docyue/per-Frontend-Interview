@@ -6,7 +6,6 @@
 2、[display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？](#2)  
 3、[为什么要初始化CSS样式?](#3)  
 4、[如何创建块级格式化上下文(block formatting context),BFC有什么用?](#4)    
-5、[display:none和visibility:hidden的区别？](#5)    
 6、[CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？ ](#6)   
 7、[CSS中 link 和@import 的区别是？](#7)  
 8、[解释下 CSS sprites,以及你要如何在页面或网站中使用它？](#8)  
@@ -114,13 +113,6 @@ xx、[](#)
 	W3C CSS 2.1 规范中的一个概念,它决定了元素如何对其内容进行布局,以及与其他元素的关系和相互作用。
 </font>
 
-<a name='5'></a>
-**5、display:none和visibility:hidden的区别？**  
-<font size=1>
-
-	display:none 隐藏对应的元素,在文档布局中不再给它分配空间,它各边的元素会合拢,就当他从来不存在。
-	visibility:hidden  隐藏对应的元素,但是在文档布局中仍保留原来的空间。
-</font>
 
 <a name='6'></a>
 **6、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？**  
@@ -213,7 +205,7 @@ xx、[](#)
 		visibility:hidden;是继承属性,子孙节点消失由于继承了hidden,设置visibility: visible;可以让子孙节点显式；
 		修改常规流中元素的display通常会造成文档重排。修改visibility属性只会造成本元素的重绘；
 		浏览器不会读取display: none;元素内容；会读取visibility: hidden;元素内容；
-</font>
+</font>		
 
 <a name='10'></a>
 **10、PNG,GIF,JPG的区别及如何选？**  
@@ -362,174 +354,170 @@ xx、[](#)
 **13、如何竖直居中一个元素?**  
 <font size=1>
 	<li>[垂直居中6种方法](http://blog.csdn.net/freshlover/article/details/11579669)</li> 
-
+	
+	---------------------------------------分割线---------------------------------------
 	1、绝对定位居中(Absolute Centering)：
 		需声明元素高度和下面的CSS:
-	.Center-Container {  
-	  position: relative;  
-	}  
-	  
-	.Absolute-Center {  
-	  width: 50%;  
-	  height: 50%;  
-	  overflow: auto;  
-	  margin: auto;  
-	  position: absolute;  
-	  top: 0; left: 0; bottom: 0; right: 0;  
-	}  
-	*优点：
-		1.支持跨浏览器,包括IE8-IE10
-		2.无需其他特殊标记,CSS代码量少
-		3.支持百分比%属性值和min-/max-属性
-		4.只用这一个类可实现任何内容块居中
-		5.不论是否设置padding都可居中（在不使用box-sizing属性的前提下）
-		6.内容块可以被重绘
-		7.完美支持图片居中
-	*缺点：
-		1.必须声明高度（查看可变高度Variable Height）
-		2.建议设置overflow:auto来防止内容越界溢出。（查看溢出Overflow）
-		3.在Windows Phone设备上不起作用
-	*浏览器兼容性：
-		Chrome,Firefox, Safari, Mobile Safari, IE8-10.
+		.Center-Container {  
+		  position: relative;  
+		}  
+		  
+		.Absolute-Center {  
+		  width: 50%;  
+		  height: 50%;  
+		  overflow: auto;  
+		  margin: auto;  
+		  position: absolute;  
+		  top: 0; left: 0; bottom: 0; right: 0;  
+		}  
+		*优点：
+			1.支持跨浏览器,包括IE8-IE10
+			2.无需其他特殊标记,CSS代码量少
+			3.支持百分比%属性值和min-/max-属性
+			4.只用这一个类可实现任何内容块居中
+			5.不论是否设置padding都可居中（在不使用box-sizing属性的前提下）
+			6.内容块可以被重绘
+			7.完美支持图片居中
+		*缺点：
+			1.必须声明高度（查看可变高度Variable Height）
+			2.建议设置overflow:auto来防止内容越界溢出。（查看溢出Overflow）
+			3.在Windows Phone设备上不起作用
+		*浏览器兼容性：
+			Chrome,Firefox, Safari, Mobile Safari, IE8-10.
+
 	---------------------------------------分割线---------------------------------------
-
-
 	2、负外边距(Negative Margins)居中：如果块元素尺寸已知,最流行的方法：
 		外边距margin取负数,大小为width/height（不使用box-sizing: border-box时包括padding,）的一半;
 		再加上top: 50%; left: 50%;
-	.is-Negative {
-	        width: 300px;
-	        height: 200px;
-	        padding: 20px;
-	        position: absolute;
-	        top: 50%; left: 50%;
-	        margin-left: -170px; /* (width + padding)/2 */
-	        margin-top: -120px; /* (height + padding)/2 */
-	}
-	*优点：
-		1. 良好的跨浏览器特性,兼容IE6-IE7。
-		2. 代码量少
-	*缺点：
-		1. 不能自适应。不支持百分比尺寸和min-/max-属性设置。
-		2. 内容可能溢出容器。
-		3. 边距大小与padding,和是否定义box-sizing: border-box有关,计算需要根据不同情况。
+		.is-Negative {
+		        width: 300px;
+		        height: 200px;
+		        padding: 20px;
+		        position: absolute;
+		        top: 50%; left: 50%;
+		        margin-left: -170px; /* (width + padding)/2 */
+		        margin-top: -120px; /* (height + padding)/2 */
+		}
+		*优点：
+			1. 良好的跨浏览器特性,兼容IE6-IE7。
+			2. 代码量少
+		*缺点：
+			1. 不能自适应。不支持百分比尺寸和min-/max-属性设置。
+			2. 内容可能溢出容器。
+			3. 边距大小与padding,和是否定义box-sizing: border-box有关,计算需要根据不同情况。
+
 	---------------------------------------分割线---------------------------------------
-
-
 	3、变形（Transforms）：元素高度可变,最简单的方法：
 		内容块定义transform: translate(-50%,-50%)必须带上浏览器厂商的前缀；
 		再加上top: 50%; left: 50%;
-	.is-Transformed {
-	  width: 50%;
-	  margin: auto;
-	  position: absolute;
-	  top: 50%; left: 50%;
-	  -webkit-transform: translate(-50%,-50%);
-	      -ms-transform: translate(-50%,-50%);
-	          transform: translate(-50%,-50%);
-	}
-	*优点：
-		1.内容可变高度
-		2.代码量少
-	*缺点：
-		1.IE8不支持
-		2.属性需要写浏览器厂商前缀
-		3.可能干扰其他transform效果
-		4.某些情形下会出现文本或元素边界渲染模糊的现象
+		.is-Transformed {
+		  width: 50%;
+		  margin: auto;
+		  position: absolute;
+		  top: 50%; left: 50%;
+		  -webkit-transform: translate(-50%,-50%);
+		      -ms-transform: translate(-50%,-50%);
+		          transform: translate(-50%,-50%);
+		}
+		*优点：
+			1.内容可变高度
+			2.代码量少
+		*缺点：
+			1.IE8不支持
+			2.属性需要写浏览器厂商前缀
+			3.可能干扰其他transform效果
+			4.某些情形下会出现文本或元素边界渲染模糊的现象
+
 	---------------------------------------分割线---------------------------------------
-
-
 	4、表格单元格（Table-Cell）：最好的方法:
 		因为内容块高度会随着实际内容的高度变化,浏览器对此的兼容性也好;
 		最大的缺点是需要大量额外的标记,需要三层元素让最内层的元素居中。
-	<div class="Center-Container is-Table">
-	  <div class="Table-Cell">
-	    <div class="Center-Block">
-	    <!-- CONTENT -->
-	    </div>
-	  </div>
-	</div>
-	.Center-Container.is-Table { display: table; }
-	.is-Table .Table-Cell {
-	  display: table-cell;
-	  vertical-align: middle;
-	}
-	.is-Table .Center-Block {
-	  width: 50%;
-	  margin: 0 auto;
-	}
-	*优点：
-		1.高度可变
-		2.内容溢出会将父元素撑开。
-		3.跨浏览器兼容性好。
-	*缺点：
-		需要额外html标记
+		<div class="Center-Container is-Table">
+		  <div class="Table-Cell">
+		    <div class="Center-Block">
+		    <!-- CONTENT -->
+		    </div>
+		  </div>
+		</div>
+		.Center-Container.is-Table { display: table; }
+		.is-Table .Table-Cell {
+		  display: table-cell;
+		  vertical-align: middle;
+		}
+		.is-Table .Center-Block {
+		  width: 50%;
+		  margin: 0 auto;
+		}
+		*优点：
+			1.高度可变
+			2.内容溢出会将父元素撑开。
+			3.跨浏览器兼容性好。
+		*缺点：
+			需要额外html标记
+
 	---------------------------------------分割线---------------------------------------
-
-
 	5、行内块元素（Inline-Block）：受欢迎的方式,
 		使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央；
 	
 		如果内容块宽度大于容器宽度,比如放了一个很长的文本,但内容块宽度设置最大不能超过容器的100%减去0.25em,	
 		否则使用伪元素:after内容块会被挤到容器顶部,使用:before内容块会向下偏移100%。
 
-		如果你的内容块需要占据尽可能多的水平空间,
-		可以使用max-width: 99%;（针对较大的容器）或max-width: calc(100% -0.25em)（取决于浏览器和容器宽度）
-	<div class="Center-Container is-Inline">
-	  <div class="Center-Block">
-	    <!-- CONTENT -->
-	  </div>
-	</div>
-	.Center-Container.is-Inline {
-	  text-align: center;
-	  overflow: auto;
-	}
-	.Center-Container.is-Inline:after,
-	.is-Inline .Center-Block {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
-	.Center-Container.is-Inline:after {
-	  content: '';
-	  height: 100%;
-	  margin-left: -0.25em; /* To offset spacing. May vary by font */
-	}
-	.is-Inline .Center-Block {
-	  max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
-	  /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
-	}
-	*优点：
-		1.高度可变
-		2.内容溢出会将父元素撑开。
-		3.支持跨浏览器,也适应于IE7。
-	*缺点：
-		1.需要一个容器
-		2.水平居中依赖于margin-left: -0.25em;该尺寸对于不同的字体/字号需要调整。
-		3.内容块宽度不能超过容器的100% - 0.25em。
+		如果你的内容块需要占据尽可能多的水平空间,可以使用max-width: 99%;（针对较大的容器）或max-width: calc(100% -0.25em)（取决于浏览器和容器宽度）
+
+		<div class="Center-Container is-Inline">
+		  <div class="Center-Block">
+		    <!-- CONTENT -->
+		  </div>
+		</div>
+		.Center-Container.is-Inline {
+		  text-align: center;
+		  overflow: auto;
+		}
+		.Center-Container.is-Inline:after,
+		.is-Inline .Center-Block {
+		  display: inline-block;
+		  vertical-align: middle;
+		}
+		.Center-Container.is-Inline:after {
+		  content: '';
+		  height: 100%;
+		  margin-left: -0.25em; /* To offset spacing. May vary by font */
+		}
+		.is-Inline .Center-Block {
+		  max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
+		  /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+		}
+		*优点：
+			1.高度可变
+			2.内容溢出会将父元素撑开。
+			3.支持跨浏览器,也适应于IE7。
+		*缺点：
+			1.需要一个容器
+			2.水平居中依赖于margin-left: -0.25em;该尺寸对于不同的字体/字号需要调整。
+			3.内容块宽度不能超过容器的100% - 0.25em。
+
 	---------------------------------------分割线---------------------------------------
-
-
 	6、Flexbox:	这是CSS布局未来的趋势。
 		Flexbox是CSS3新增属性,设计初衷是为了解决像垂直居中这样的常见布局问题。
 		记住Flexbox不只是用于居中,也可以分栏或者解决一些令人抓狂的布局问题。
-	body {
-	   /* Remember to use the other versions for IE 10 and older browsers! */
-	   display: flex;
-	   justify-content: center;
-	   align-items: center;
-	}
-	*优点：
-		1.内容块的宽高任意,优雅的溢出。
-		2.可用于更复杂高级的布局技术中。
-	*缺点：
-		1. IE8/IE9不支持。
-		2. Body需要特定的容器和CSS样式。
-		3.运行于现代浏览器上的代码需要浏览器厂商前缀。
-		4.表现上可能会有一些问题
+		body {
+		   /* Remember to use the other versions for IE 10 and older browsers! */
+		   display: flex;
+		   justify-content: center;
+		   align-items: center;
+		}
+		*优点：
+			1.内容块的宽高任意,优雅的溢出。
+			2.可用于更复杂高级的布局技术中。
+		*缺点：
+			1. IE8/IE9不支持。
+			2. Body需要特定的容器和CSS样式。
+			3.运行于现代浏览器上的代码需要浏览器厂商前缀。
+			4.表现上可能会有一些问题
 
-	*其他：
-		曾经你使用负边距（Negative Margins）的地方,现在可以用绝对居中(Absolute Centering)替代了。
-		你不再需要处理讨厌的边距计算和额外的标记,而且还能让内容块自适应大小居中;
+		*其他：
+			曾经你使用负边距（Negative Margins）的地方,现在可以用绝对居中(Absolute Centering)替代了。
+			你不再需要处理讨厌的边距计算和额外的标记,而且还能让内容块自适应大小居中;
 
 	如果你的站点需要可变高度的内容,可以试试单元格(Table-Cell)和行内块元素(Inline-Block)这两种方法;	
 	如果你处在流血的边缘,试试Flexbox,体验一下这一高级布局技术的好处吧。
@@ -630,10 +618,6 @@ xx、[](#)
 	<!--[if IE 6]>
 	Special instructions for IE 6 here
 	<![endif]-->
-
-
-
-
 </font>
 
 <a name='16'></a>
