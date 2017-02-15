@@ -139,7 +139,8 @@ JavaScript中的Promise</a>
 1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html" target='_blank'>jQuery 基本原理</a>  
 2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
 3、<a href="http://www.appinn.com/markdown/#philosophy" target='_blank'>Markdown语法</a>  
-4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
+4、<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target='_blank'>火狐开发者文档MDN</a>
+5、<a href="https://github.com/paddingme/front-end-collect" target='_blank'>整合资源项目</a>  
 6、<a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html" target='_blank'>深入理解JavaScript系列</a>  
 7、<a href="https://www.awesomes.cn/subject/react" target='_blank'>Awesomes - React专题</a>
 8、<a href="http://www.barretlee.com/blog/2016/04/18/javascript-detail/" target='_blank'>JavaScript被忽视的细节</a>
