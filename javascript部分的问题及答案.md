@@ -1480,7 +1480,7 @@ xx、[](#)
 		1.Expires在HTTP/1.0中已经定义，Cache-Control:max-age在HTTP/1.1中才有定义，
 			为了向下兼容，仅使用max-age不够；
 		2.Expires指定一个绝对的过期时间(GMT格式),这么做会导致至少2个问题：
-			1)客户端和服务器时间不同步导致Expires的配置出现问题。 
+			1）客户端和服务器时间不同步导致Expires的配置出现问题。 
 			2）很容易在配置后忘记具体的过期时间，导致过期来临出现浪涌现象；
 		3.max-age 指定的是从文档被访问后的存活时间，这个时间是个相对值(比如:3600s),
 			相对的是文档第一次被请求时服务器记录的Request_time(请求时间)
@@ -1543,7 +1543,7 @@ xx、[](#)
 		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小；
 		{'age':'12', 'name':'back'}
 		JSON.parse('str') 				//转换string为JSON格式
-		JSON.stringfy('JSON') 			//转换JSON为string格式
+		JSON.stringify('JSON') 			//转换JSON为string格式
 
 	*区别：
 	(1).数据体积方面。	
