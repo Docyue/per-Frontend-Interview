@@ -271,16 +271,6 @@ XHTML 1.0 规定了三种 XML 文档类型：Strict、Transitional 以及 Frames
 
 </font>
 
-<a name='xx'></a>
-**xx、**  
-<font size=1>
-
-</font>
-
-
-
-
-
 
 
 [回顶部](#回顶部)
