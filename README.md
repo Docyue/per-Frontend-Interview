@@ -131,7 +131,7 @@ JavaScript函数式编程</a>
 3、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#3"  target='_blank'>
 JavaScript中的Promise</a>  
 4、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#4"  target='_blank'>
-前端基础进阶系列</a>  
+JavaScript基础进阶系列</a>  
 
 ---------------------------------------------------------section分割线-----------------------------------------------------------------
 ##参考资料部分  
