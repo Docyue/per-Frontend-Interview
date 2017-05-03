@@ -1,6 +1,5 @@
 <a name='回顶部'></a>  
-# per-FE-Interview
-自己整理的前端面试题问题大纲，主要分三大部分html,css,js  
+# per-FE-Interview 
 
 **前端开发面试知识点大纲:**
 	
@@ -17,7 +16,6 @@
 		
   
 ## html部分  
-<font size=2>
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#1"  target='_blank'>
 Doctype作用？严格模式与混杂模式如何区分？它们有何意义?有多少种Doctype文档类型？</a>  
 2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#2"  target='_blank'>
@@ -52,10 +50,8 @@ iframe有哪些缺点？</a>
 HTML5的form如何关闭自动完成功能？</a>   
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#17"  target='_blank'>什么叫优雅降级和渐进增强? </a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>了解HTML5中的downloa属性</a>  
-</font>  
   
 ## CSS部分
-<font size=2>    
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#1"  target='_blank'>
 介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？</a>  
 2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#2"  target='_blank'>
