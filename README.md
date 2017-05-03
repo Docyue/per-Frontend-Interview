@@ -15,8 +15,8 @@
 	*其他：
 		HTTP、安全、正则、优化、重构、响应式、移动端、团队协作、可维护、SEO、UED、架构 	
 		
-
-##<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md" target='_blank'>html部分</a> 
+  
+##html部分  
 <font size=2>
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#1"  target='_blank'>
 Doctype作用？严格模式与混杂模式如何区分？它们有何意义?有多少种Doctype文档类型？</a>  
@@ -52,13 +52,9 @@ iframe有哪些缺点？</a>
 HTML5的form如何关闭自动完成功能？</a>   
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#17"  target='_blank'>什么叫优雅降级和渐进增强? </a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>了解HTML5中的downloa属性</a>  
-</font>
-
-xx、[](#) 
-
+</font>  
   
----------------------------------------------------------section分割线-----------------------------------------------------------------
-## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md"  target='_blank'>CSS部分</a> 
+##CSS部分
 <font size=2>    
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#1"  target='_blank'>
 介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？</a>  
@@ -95,12 +91,9 @@ CSS选择器有哪些？</a>
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#17"  target='_blank'>
 CSS3有哪些新特性（包含哪些模块）？</a>  
 18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#18"  target='_blank'>
-iphone手机不同版本CSS兼容怎么实现？</a>  
+iphone手机不同版本CSS兼容怎么实现？</a>   
 
-xx、[](#)  
-
----------------------------------------------------------section分割线-----------------------------------------------------------------
-## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md"  target='_blank'>JavaScript部分</a>
+##JavaScript部分  
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h1"  target='_blank'>
 数据类型</a>  
 2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h2"  target='_blank'>
@@ -120,10 +113,9 @@ dom操作</a>
 9、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h9"  target='_blank'>
 性能优化</a>  
 10、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/javascript部分的问题及答案.md#h10"  target='_blank'>
-框架,其他</a>  
-
----------------------------------------------------------section分割线-----------------------------------------------------------------
-## <a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md"  target='_blank'>JavaScript专题部分</a>
+框架,其他</a>   
+  
+##JavaScript专题部分  
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#1"  target='_blank'>
 Javascript模块化编程</a>  
 2、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#2"  target='_blank'>
@@ -132,8 +124,7 @@ JavaScript函数式编程</a>
 JavaScript中的Promise</a>  
 4、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/JavaScript专题部分.md#4"  target='_blank'>
 JavaScript基础进阶系列</a>  
-
----------------------------------------------------------section分割线-----------------------------------------------------------------
+  
 ##参考资料部分  
 1、<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html" target='_blank'>jQuery 基本原理</a>  
 2、<a href="http://bonsaiden.github.io/JavaScript-Garden/zh/" target='_blank'>JavaScript 秘密花园</a>  
