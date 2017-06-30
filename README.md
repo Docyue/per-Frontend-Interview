@@ -49,7 +49,7 @@ iframe有哪些缺点？</a>
 16、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#16"  target='_blank'>
 HTML5的form如何关闭自动完成功能？</a>   
 17、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#17"  target='_blank'>什么叫优雅降级和渐进增强? </a>  
-18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>了解HTML5中的downloa属性</a>  
+18、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/html部分的问题及答案.md#18"  target='_blank'>了解HTML5中的download属性</a>  
   
 ## CSS部分
 1、<a href="https://github.com/Docyue/per-FE-Interview/blob/master/css部分的问题及答案.md#1"  target='_blank'>
