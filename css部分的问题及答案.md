@@ -26,13 +26,12 @@ xx、[](#)
 ---------------------------------------------------------分割线-----------------------------------------------------------------
 
 <a name='1'></a>
-**1、介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？**  
-<font size=1>
+**1、介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？**   
 1、有两种, IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;  
 2、盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
 	文档中的每个元素被描绘为矩形盒子。确定其大小,属性——比如颜色、背景、边框,及其位置是渲染引擎的目标。CSS下这些矩形盒子由标准盒模型描述。这个模型描述元素内容占用空间。 
 
-	盒子有四个边界：外边距边界margin edge, 边框边界border edge, 内边距边界padding edge 与 内容边界content edge。
+	盒子有四个边界：外边距边界margin, 边框边界border, 内边距边界padding 与 内容边界content。
 
 	a.内容区域content area 是真正包含元素内容的区域。位于内容边界的内部,
 		它的大小为内容宽度 或 content-box宽及内容高度或content-box高。 
@@ -52,128 +51,115 @@ xx、[](#)
 		在外边距合并的情况下,由于盒之间共享外边距,外边距不容易弄清楚。
 
 	最后注意,对于行内非替换元素,其占用空间（行高）由 line-height 决定,即使有内边距与边框。
-</font>
 
 <a name='2'></a>
-**2、display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？absolute与fixed共同点与不同点？**  
-<font size=1>
+**2、display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？absolute与fixed共同点与不同点？**   
+ 	
+	## 1、display
+	block 象块类型元素一样显示。
+	none 缺省值。象行内元素类型一样显示。
+	inline-block 象行内元素一样显示,但其内容象块类型元素一样显示。
+	list-item 象块类型元素一样显示,并添加样式列表标记。  
 
- 	1、display
-	   block 象块类型元素一样显示。
-	   none 缺省值。象行内元素类型一样显示。
-	   inline-block 象行内元素一样显示,但其内容象块类型元素一样显示。
-	   list-item 象块类型元素一样显示,并添加样式列表标记。  
-		
-	2、position	
-	   absolute  生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 
-	   fixed （老IE不支持）  	        生成绝对定位的元素,相对于浏览器窗口进行定位。 
-	   relative 生成相对定位的元素,相对于其正常位置进行定位。 
-	   static  默认值。没有定位,元素出现在正常的流中  
-	   inherit 规定从父元素继承 position 属性的值。  
-	   *（忽略 top, bottom, left, right z-index 声明）
+	## 2、position	
+	absolute  生成绝对定位的元素,相对于 static 定位以外的第一个父元素进行定位。 
+	fixed （老IE不支持）生成绝对定位的元素,相对于浏览器窗口进行定位。 
+	relative 生成相对定位的元素,相对于其正常位置进行定位。 
+	static  默认值。没有定位,元素出现在正常的流中  
+	inherit 规定从父元素继承 position 属性的值。  
+	*（忽略 top, bottom, left, right z-index 声明）
 
-	absolute与fixed共同点与不同点
-		A、共同点：
-		1.改变行内元素的呈现方式,display被置为block; 
-		2.让元素脱离普通流,不占据空间; 
-		3.默认会覆盖到非定位元素上;    
-		B、不同点：
-		absolute的”根元素“是可以设置的,而fixed的”根元素“固定为浏览器窗口。
-		当你滚动网页,fixed元素与浏览器窗口之间的距离是不变的。  
-</font>
+	## absolute与fixed共同点与不同点
+	A、共同点：
+	1.改变行内元素的呈现方式,display被置为block; 
+	2.让元素脱离普通流,不占据空间; 
+	3.默认会覆盖到非定位元素上;    
+	B、不同点：
+	absolute的”根元素“是可以设置的,而fixed的”根元素“固定为浏览器窗口。
+	当你滚动网页,fixed元素与浏览器窗口之间的距离是不变的。  
 
 <a name='3'></a>
-**3、为什么要初始化CSS样式?**  
-<font size=1>
-	1、因为浏览器的兼容问题,不同浏览器对有些标签的默认值是不同的,如果没对CSS初始化往往会出现浏览器之间的页面显示差异。  
+**3、为什么要初始化CSS样式?**   
+
+	1、因为浏览器的兼容问题,不同浏览器对有些标签的默认值是不同的,如果没对CSS初始化往往会出现浏览器之间的页面显示差异。 
 	2、当然,初始化样式会对SEO有一定的影响,但鱼和熊掌不可兼得,但力求影响最小的情况下初始化。  
-	<li>最简单的初始化方法就是：`* {padding: 0; margin: 0;} `（不建议）</li>
-	<li>[淘宝的样式初始化](http://nec.netease.com/framework/css-reset.html)</li>
-</font>
+	a、最简单的初始化方法就是：`* {padding: 0; margin: 0;} `（不建议）
+	b、[淘宝的样式初始化](http://nec.netease.com/framework/css-reset.html)
 
 <a name='4'></a>
-**4、如何创建块级格式化上下文(block formatting context),BFC有什么用?**  
-<font size=1>
+**4、如何创建块级格式化上下文(block formatting context),BFC有什么用?**   
 
-	BFC,块级格式化上下文,一个创建了新的BFC的盒子是独立布局的,盒子里面的子元素的样式不会影响到外面的元素,
-	在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
+	BFC,块级格式化上下文,一个创建了新的BFC的盒子是独立布局的,盒子里面的子元素的样式不会影响到外面的元素,在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
 
-	*创建规则：
-		根元素
-		浮动元素（float不是none）
-		绝对定位元素（position取值为absolute或fixed）
-		display取值为inline-block,table-cell, table-caption,flex, inline-flex之一的元素
-		overflow不是visible的元素
+	## 创建规则：
+	根元素
+	浮动元素（float不是none）
+	绝对定位元素（position取值为absolute或fixed）
+	display取值为inline-block,table-cell, table-caption,flex, inline-flex之一的元素
+	overflow不是visible的元素
 
-	*作用：
-		可以包含浮动元素
-		不被浮动元素覆盖
-		阻止父子元素的margin折叠
+	## 作用：
+	可以包含浮动元素
+	不被浮动元素覆盖
+	阻止父子元素的margin折叠
 
-	W3C CSS 2.1 规范中的一个概念,它决定了元素如何对其内容进行布局,以及与其他元素的关系和相互作用。
-</font>
+	## W3C CSS 2.1 规范中的一个概念,它决定了元素如何对其内容进行布局,以及与其他元素的关系和相互作用。
 
 
 <a name='6'></a>
-**6、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？**  
-<font size=1>
+**6、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？**   
 	
-	*   1.id选择器（ # myid）
-	    2.类选择器（.myclassname）
-	    3.标签选择器（div, h1, p）
-	    4.相邻选择器（h1 + p）
-	    5.子选择器（ul > li）
-	    6.后代选择器（li a）
-	    7.通配符选择器（ * ）
-	    8.属性选择器（a[rel = "external"]）
-	    9.伪类选择器（a: hover, li: nth - child）
+	1.id选择器（ # myid）
+	2.类选择器（.myclassname）
+	3.标签选择器（div, h1, p）
+	4.相邻选择器（h1 + p）
+	5.子选择器（ul > li）
+	6.后代选择器（li a）
+	7.通配符选择器（ * ）
+	8.属性选择器（a[rel = "external"]）
+	9.伪类选择器（a: hover, li: nth - child）
 
-	*	可继承的样式：
-			1、关于文字排版的属性如：font,word-break,letter-spacing,text-align,text-rendering,
-					word-spacing,white-space,text-indent,text-transform,text-shadow
-			2、line-height
-			3、color
-			4、visibility
-			5、cursor
+	## 可继承的样式：
+	1、关于文字排版的属性如：font,word-break,letter-spacing,text-align,text-rendering,word-spacing,white-space,text-indent,text-transform,text-shadow
+	2、line-height
+	3、color
+	4、visibility
+	5、cursor
 
-	*	不可继承的样式：border padding margin width height ;
+	## 不可继承的样式：
+	border padding margin width height 
 
-	*	优先级就近原则,同权重情况下样式定义最近者为准;
-		!important >  id > class > tag
-   		important 比 内联优先级高
+	## 优先级就近原则,同权重情况下样式定义最近者为准:
+	!important >  id > class > tag (important 比 内联优先级高)
 
-	*	CSS3新增伪类举例：
-		p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
-		p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
-		p:only-of-type  选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
-		p:only-child    选择属于其父元素的唯一子元素的每个 <p> 元素。
-		p:nth-child(2)  选择属于其父元素的第二个子元素的每个 <p> 元素。
-		:enabled  :disabled 控制表单控件的禁用状态。
-		:checked        单选框或复选框被选中。
-</font>
+	## CSS3新增伪类举例：
+	p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
+	p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
+	p:only-of-type  选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
+	p:only-child    选择属于其父元素的唯一子元素的每个 <p> 元素。
+	p:nth-child(2)  选择属于其父元素的第二个子元素的每个 <p> 元素。
+	:enabled  :disabled 控制表单控件的禁用状态。
+	:checked        单选框或复选框被选中。
 
 <a name='7'></a>
-**7、CSS中 link 和@import 的区别是？**  
-<font size=1>
+**7、CSS中 link 和@import 的区别是？**   
 
 	link方式的样式的权重,高于@import的权重；
 	link是HTML方式,@import是CSS方式；
 	link最大限度支持并行下载,@import过多嵌套导致串行下载,出现FOUC;
 
-	*FOUC:
-		Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默认样式显示文档,
-		用户样式加载渲染之后再从新显示文档,造成页面闪烁。解决方法：把样式表放到文档的head;
+	## FOUC:
+	Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默认样式显示文档,
+	用户样式加载渲染之后再从新显示文档,造成页面闪烁。解决方法：把样式表放到文档的head;
 
 	link可以通过rel="alternate stylesheet"指定候选样式；
 	@import只在IE5以上才能识别,可以使用@import对老浏览器隐藏样式；
 	@import必须在样式规则之前,可以在css文件中引用其他文件；
 
-	总体来说：link优于@import
-</font>
+	## 总体来说：link优于@import
 
 <a name='8'></a>
-**8、解释下 CSS sprites,以及你要如何在页面或网站中使用它？**  
-<font size=1>
+**8、解释下 CSS sprites,以及你要如何在页面或网站中使用它？**   
 
 	CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中;
 	再利用CSS的“background-image”,“background- repeat,background-position”的组合进行背景定位;
@@ -182,94 +168,86 @@ xx、[](#)
 	这样可以减少很多图片请求的开销,因为请求耗时比较长；请求虽然可以并发,但是也有限制,一般浏览器都是6个;
 	对于未来而言,就不需要这样做了,因为有了`http2`;
 
-	*优点：
-		减少HTTP请求数,极大地提高页面加载速度;
-		增加图片信息重复度,提高压缩比,减少图片大小;
-		更换风格方便,只需在一张或几张图片上修改颜色或样式即可实现;
+	## 优点：
+	减少HTTP请求数,极大地提高页面加载速度;
+	增加图片信息重复度,提高压缩比,减少图片大小;
+	更换风格方便,只需在一张或几张图片上修改颜色或样式即可实现;
 
-	*缺点：
-		图片合并麻烦;
-		维护麻烦,修改一个图片可能需要从新布局整个图片,样式;
-</font>
+	## 缺点：
+	图片合并麻烦;
+	维护麻烦,修改一个图片可能需要从新布局整个图片,样式;
 
 <a name='9'></a>
-**9、display: none;与visibility: hidden;的区别?**  
-<font size=1>
+**9、display: none;与visibility: hidden;的区别?**   
 	
-	*联系：它们都能让元素不可见
+	## 联系：它们都能让元素不可见
 
-	*区别：
-		display:none;会让元素完全从渲染树中消失,渲染的时候不占据任何空间；
-		visibility:hidden;不会让元素从渲染树消失,渲染师元素继续占据空间,只是内容不可见；
-		display:none;是非继承属性,子孙节点消失由于元素从渲染树消失造成,通过修改子孙节点属性无法显示；
-		visibility:hidden;是继承属性,子孙节点消失由于继承了hidden,设置visibility: visible;可以让子孙节点显式；
-		修改常规流中元素的display通常会造成文档重排。修改visibility属性只会造成本元素的重绘；
-		浏览器不会读取display: none;元素内容；会读取visibility: hidden;元素内容；
-</font>		
+	## 区别:
+	display:none;  会让元素完全从渲染树中消失,渲染的时候不占据任何空间；
+	visibility:hidden;  不会让元素从渲染树消失,渲染师元素继续占据空间,只是内容不可见；
+	display:none;  是非继承属性,子孙节点消失由于元素从渲染树消失造成,通过修改子孙节点属性无法## 显示:
+	visibility:hidden;  是继承属性,子孙节点消失由于继承了hidden,设置visibility: visible;可以让子孙节点显式；
+	
+	tip: 修改常规流中元素的display通常会造成文档重排。修改visibility属性只会造成本元素的重绘；
+	tip: 浏览器不会读取display: none;元素内容；会读取visibility: hidden;元素内容；		
 
 <a name='10'></a>
-**10、PNG,GIF,JPG的区别及如何选？**  
-<font size=1>
+**10、PNG,GIF,JPG的区别及如何选？**   
 	
-	*GIF:
-		8位像素,256色
-		无损压缩
-		支持简单动画
-		支持boolean透明
-		适合简单动画
+	## GIF:
+	8位像素,256色
+	无损压缩
+	支持简单动画
+	支持boolean透明
+	适合简单动画
 
-	*JPEG：
-		颜色限于256
-		有损压缩
-		可控制压缩质量
-		不支持透明
-		适合照片
+	## JPEG：
+	颜色限于256
+	有损压缩
+	可控制压缩质量
+	不支持透明
+	适合照片
 
-	*PNG：
-		有PNG8和truecolor PNG
-		PNG8类似GIF颜色上限为256,文件小,支持alpha透明度,无动画
-		适合图标、背景、按钮
-</font>
+	## PNG：
+	有PNG8和truecolor PNG
+	PNG8类似GIF颜色上限为256,文件小,支持alpha透明度,无动画
+	适合图标、背景、按钮
 
 <a name='11'></a>
-**11、请解释一下浮动和它的工作原理？清除浮动的技巧? **  
-<font size=1>
+**11、请解释一下浮动和它的工作原理？清除浮动的技巧? **   
 	
-	*浮动元素脱离文档流,不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
+	## 浮动元素脱离文档流,不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
 
-	*浮动元素引起的问题：
-		（1）父元素的高度无法被撑开,影响与父元素同级的元素
-		（2）与浮动元素同级的非浮动元素会跟随其后
-		（3）若非第一个元素浮动,则该元素之前的元素也需要浮动,否则会影响页面显示的结构
+	## 浮动元素引起的问题：
+    （1）父元素的高度无法被撑开,影响与父元素同级的元素
+    （2）与浮动元素同级的非浮动元素会跟随其后
+    （3）若非第一个元素浮动,则该元素之前的元素也需要浮动,否则会影响页面显示的结构
 
-	*解决方法： 
-		使用CSS中的clear:both;属性来清除元素的浮动可解决2、3问题;
-		对于问题1,添加如下样式,给父元素添加clearfix样式：
-		.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
-		.clearfix{display: inline-block;} /* for IE/Mac */
+	## 解决方法： 
+    使用CSS中的clear:both;属性来清除元素的浮动可解决2、3问题;
+    对于问题1,添加如下样式,给父元素添加clearfix样式：
+    .clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+    .clearfix{display: inline-block;} /* for IE/Mac */
 
-	*清除浮动的几种方法：
-		1,额外标签法,<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使HTML结构看起来不够简洁。）
-		2,使用after伪类
-		#parent:after{
-		    content:".";
-		    height:0;
-		    visibility:hidden;
-		    display:block;
-		    clear:both;
-		    }
-
-		3,浮动外部元素
-		4,设置`overflow`为`hidden`或者auto
-</font>
+	## 清除浮动的几种方法：
+	1,额外标签法,<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使HTML结构看起来不够简洁。）
+	2,使用after伪类
+	#parent:after{
+	    content:".";
+	    height:0;
+	    visibility:hidden;
+	    display:block;
+	    clear:both;
+	    }
+	3,浮动外部元素
+	4,设置`overflow`为`hidden`或者auto
 
 <a name='12'></a>
-**12、如何水平居中一个元素？**  
-<font size=1>
+**12、如何水平居中一个元素？**   
 
 	1、如果需要居中的元素为常规流中inline元素,为父元素设置text-align: center;即可实现;  
+	
 	---------------------------------------分割线---------------------------------------
-
 	2、如果需要居中的元素为常规流中block元素：  
 		1）为元素设置宽度  
 		2）设置左右margin为auto  
@@ -293,8 +271,8 @@ xx、[](#)
 		        background: purple;
 		    }
 		</style>
+		
 	---------------------------------------分割线---------------------------------------
-
 	3、如果需要居中的元素为浮动元素：
 		1）为元素设置宽度
 		2）position: relative
@@ -320,8 +298,8 @@ xx、[](#)
 		        background-color: purple;
 		    }
 		</style>
+		
 	---------------------------------------分割线---------------------------------------
-
 	4、如果需要居中的元素为绝对定位元素：
 		1）为元素设置宽度
 		2）偏移量设置为50%
@@ -348,14 +326,12 @@ xx、[](#)
 		    }
 		</style>
 
-</font>
 
 <a name='13'></a>
-**13、如何竖直居中一个元素?**  
-<font size=1>
+**13、如何竖直居中一个元素?**   
 	<li>[垂直居中6种方法](http://blog.csdn.net/freshlover/article/details/11579669)</li> 
 	
-	---------------------------------------分割线---------------------------------------
+
 	1、绝对定位居中(Absolute Centering)：
 		需声明元素高度和下面的CSS:
 		.Center-Container {  
@@ -521,11 +497,9 @@ xx、[](#)
 
 	如果你的站点需要可变高度的内容,可以试试单元格(Table-Cell)和行内块元素(Inline-Block)这两种方法;	
 	如果你处在流血的边缘,试试Flexbox,体验一下这一高级布局技术的好处吧。
-</font>
 
 <a name='14'></a>
-**14、什么叫外边距折叠(collapsing margins)？**  
-<font size=1>
+**14、什么叫外边距折叠(collapsing margins)？**   
 	
 	毗邻的两个或多个margin会合并成一个margin,叫做外边距折叠。规则如下：
 
@@ -533,11 +507,9 @@ xx、[](#)
 	2、浮动元素/inline-block元素/绝对定位元素的margin不会和垂直方向上的其他元素的margin折叠
 	3、创建了块级格式化上下文的元素,不会和它的子元素发生margin折叠
 	4、元素自身的margin-bottom和margin-top相邻时也会折叠
-</font>
 
 <a name='15'></a>
-**15、css hack原理及常用hack?**  
-<font size=1>
+**15、css hack原理及常用hack?**   
 	
 	原理：利用不同浏览器对CSS的支持和解析结果不一样编写针对特定浏览器样式。常见的hack有:
 	1）属性hack
@@ -558,8 +530,8 @@ xx、[](#)
 
 	/* IE6, IE7 -- acts as an !important */
 	#veintesiete { color: blue !ie; } /* string after ! can be anything */
+	
 	---------------------------------------分割线---------------------------------------
-
 	2）选择器hack
 	/* IE6 and below */
 	* html #uno  { color: red }
@@ -612,17 +584,15 @@ xx、[](#)
 
 	/* Firefox 3.0+ */
 	#veinticinco,  x:-moz-any-link, x:default  { color: red  }
+	
 	---------------------------------------分割线---------------------------------------
-
 	3）IE条件注释
 	<!--[if IE 6]>
 	Special instructions for IE 6 here
 	<![endif]-->
-</font>
 
 <a name='16'></a>
-**16、CSS选择器有哪些？**  
-<font size=1>
+**16、CSS选择器有哪些？**   
 	
 	**通用选择器：选择所有元素,不参与计算优先级*,兼容性IE6+
 	#X id选择器：选择id值为X的元素,兼容性：IE6+
@@ -630,7 +600,8 @@ xx、[](#)
 	X Y后代选择器： 选择满足X选择器的后代节点中满足Y选择器的元素,兼容性：IE6+
 	X 元素选择器： 选择标所有签为X的元素,兼容性：IE6+
 	:link,：visited,：focus,：hover,：active链接状态： 选择特定状态的链接元素,顺序LoVe HAte,兼容性: IE4+
-	---------------------------------------分割线---------------------------------------
+	
+	---------------------------------------分割线---------------------------------------	
 	X + Y直接兄弟选择器：在X之后第一个兄弟节点中选择满足Y选择器的元素,兼容性： IE7+
 	X > Y子选择器： 选择X的子元素中满足Y选择器的元素,兼容性： IE7+
 	X ~ Y兄弟： 选择X之后所有兄弟节点中满足Y选择器的元素,兼容性： IE7+
@@ -643,6 +614,7 @@ xx、[](#)
 	[attr*=value]：选择属性值中包含value的元素
 	[:checked]：选择单选框,复选框,下拉框中选中状态下的元素,兼容性：IE9+
 	X:after, X::after：after伪元素,选择元素虚拟子元素（元素的最后一个子元素）
+	
 	---------------------------------------分割线---------------------------------------
 	CSS3中::表示伪元素。兼容性:after为IE8+,::after为IE9+
 	:hover：鼠标移入状态的元素,兼容性a标签IE4+, 所有元素IE7+
@@ -658,38 +630,35 @@ xx、[](#)
 	X:only-child：伪类,选择满足X选择器的元素,且这个元素是其父元素的唯一子元素。兼容性IE9+
 	X:only-of-type：伪类,选择X选择的元素,解析得到元素标签,如果该元素没有相同类型的兄弟节点时选中它。兼容性IE9+
 	X:first-of-type：伪类,选择X选择的元素,解析得到元素标签,如果该元素 是此此类型元素的第一个兄弟。选中它。兼容性IE9+
-</font>
 
 <a name='17'></a>
-**17、CSS3有哪些新特性（包含哪些模块）？**  
-<font size=1>
+**17、CSS3有哪些新特性（包含哪些模块）？**   
 	
 	1、圆角border-radius、阴影box-shadow,text-shadow、渐变gradients、过渡transitions、
 		动画animations、布局multi-columns, flex box, grid layout, Opacity,color(rgb,rgba,hsl,hsla )
+		
 	2、子串匹配的属性选择器:E[attribute^="value"], E[attribute$="value"], E[attribute*="value"]
+	
 	3、新的伪类：
 		:target, :enabled 和 :disabled,:checked,:indeterminate,:root,:nth-child 和 :nth-last-child,
 		:nth-of-type和 :nth-last-of-type,:last-child,:first-of-type 和 :last-of-type,
 		:only-child 和 :only-of-type,:empty,和 :not
+		
 	4、伪元素使用两个冒号而不是一个来表示：
 		:after 变为 ::after, :before 变为 ::before, :first-letter 变为 ::first-letter, 
 		还有 :first-line 变为 ::first-line。
-</font>
 
 <a name='17'></a>
 **18、iphone手机不同版本CSS兼容怎么实现？**  
-<font size=1>
-	具体答案：
+ 
+	## 具体答案：
 	http://stackoverflow.com/questions/12539697/iphone-5-css-media-query
-</font>
 
 
 
 <a name='xx'></a>
-**xx、**  
-<font size=1>
+**xx、**   
 
-</font>
 
 
 
